@@ -4,9 +4,11 @@ import Contact from "./Contact";
 
 function MainContent(): JSX.Element {
 
-
   return (
     <main>
+      <AboutMe />
+      <MyProjects />
+      <Contact />
     </main>
   );
 }
