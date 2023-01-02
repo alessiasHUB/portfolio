@@ -4,7 +4,7 @@ import React from "react";
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface IProjectsProps {}
 
-const Projects: React.FunctionComponent<IProjectsProps> = (props) =>{
+const Projects: React.FunctionComponent<IProjectsProps> = (props) => {
   const projectList = projects.map((project, index) => {
     return (
       <div className="project" key={index}>
@@ -41,6 +41,6 @@ const Projects: React.FunctionComponent<IProjectsProps> = (props) =>{
       {projectList}
     </>
   );
-}
+};
 
 export default Projects;

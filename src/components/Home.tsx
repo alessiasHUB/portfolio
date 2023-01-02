@@ -9,6 +9,6 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
       <p>main page</p>
     </main>
   );
-}
+};
 
 export default Home;

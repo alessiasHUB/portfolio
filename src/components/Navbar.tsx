@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface INavbarProps {}
@@ -12,6 +12,6 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
       <Link to="/contact">Contact</Link>
     </nav>
   );
-}
+};
 
 export default Navbar;

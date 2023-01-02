@@ -2,10 +2,7 @@
 export interface IAboutProps {}
 
 const About: React.FunctionComponent<IAboutProps> = (props) => {
-    return (
-        <>
-        </>
-    )
-}
+  return <></>;
+};
 
 export default About;
