@@ -1,17 +1,26 @@
-import MainContent from "./components/MainContent";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from "./components/Home";
 import PageFooter from "./components/PageFooter";
-import PageHeader from "./components/PageHeader";
+import Navbar from "./components/Navbar";
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 import "./style.css"
 
-function App(): JSX.Element {
+export default function App(): JSX.Element {
 
   return (
     <>
-      <PageHeader />
-      <MainContent />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
       <PageFooter />
     </>
   );
 }
-
-export default App;
