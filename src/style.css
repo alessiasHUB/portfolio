@@ -23,13 +23,13 @@ nav {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 .container {
   height: 100%;
   background-color: red;
   padding: 0;
 }
-html, body {
+html,
+body {
   height: 100%;
 }
 .content {
