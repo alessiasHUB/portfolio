@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface IAboutProps {}
 
+// doesn't work!! CRYYYYYY
 const DownloadPDF: React.FC = () => {
   const link = useRef<HTMLAnchorElement>(null);
 
