@@ -1,5 +1,29 @@
+import React, { useRef } from "react";
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface IAboutProps {}
+
+const DownloadPDF: React.FC = () => {
+  const link = useRef<HTMLAnchorElement>(null);
+
+  const handleClick = () => {
+    if (link.current) {
+      link.current.click();
+    }
+  };
+  return (
+    <>
+      <button onClick={handleClick}>here</button>
+      <a
+        ref={link}
+        href="../data/AlessiaBorys.pdf"
+        download
+        style={{ display: "none" }}
+      >
+        here
+      </a>
+    </>
+  );
+};
 
 const introduction = `
 Chemical engineering graduate with experience as a junior full stack software 
@@ -145,10 +169,7 @@ const About: React.FunctionComponent<IAboutProps> = (props) => {
     <>
       <h1>Please take a look at my resume below</h1>
       <h3>
-        Or download it{" "}
-        <a href="../data/cv.pdf" download>
-          here
-        </a>
+        Or download it <DownloadPDF />
       </h3>
       <h4>Introduction</h4>
       <p className="introduction">{introduction}</p>
