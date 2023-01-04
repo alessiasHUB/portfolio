@@ -81,7 +81,7 @@ const About: React.FunctionComponent<IAboutProps> = (props) => {
   return (
     <>
       <h1>Please take a look at my resume below</h1>
-      <h3>Or download it here: <a>link</a></h3>
+      <h3>Or download it <a href="./data/cv.pdf" download>here</a></h3>
       <h4>Introduction</h4>
       <p className="introduction">{introduction}</p>
       <hr />
