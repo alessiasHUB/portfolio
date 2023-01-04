@@ -5,7 +5,7 @@ export interface IHomeProps {}
 
 const Home: React.FunctionComponent<IHomeProps> = (props) => {
   return (
-    <main>
+    <main className="content">
       <p>Hello there!</p>
     </main>
   );

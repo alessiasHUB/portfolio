@@ -1,5 +1,7 @@
 * {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 nav {
   background-color: #333;
@@ -19,4 +21,26 @@ nav {
 .project {
   color: rgb(9, 9, 39);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.container {
+  height: 100%;
+  background-color: red;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+.content {
+  height: 100%;
+  background-color: aqua;
+  margin: 0;
+  padding: 0;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: pink;
+  width: 100%;
 }

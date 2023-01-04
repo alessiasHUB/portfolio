@@ -1,6 +1,6 @@
 function PageFooter(): JSX.Element {
   return (
-    <footer>
+    <footer className="footer">
       <p>Alessia Borys 2022</p>
     </footer>
   );

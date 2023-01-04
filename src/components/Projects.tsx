@@ -36,10 +36,10 @@ const Projects: React.FunctionComponent<IProjectsProps> = (props) => {
   });
 
   return (
-    <>
+    <div className="content">
       <h2 className="sub-title">My projects</h2>
       {projectList}
-    </>
+    </div>
   );
 };
 

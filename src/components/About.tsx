@@ -167,7 +167,7 @@ const hobbies: string[] = [
 
 const About: React.FunctionComponent<IAboutProps> = (props) => {
   return (
-    <>
+    <div className="content">
       <h1>Please take a look at my resume below</h1>
       <h3>
         Or download it <DownloadPDF />
@@ -255,7 +255,7 @@ const About: React.FunctionComponent<IAboutProps> = (props) => {
       <hr />
       <hr />
       <hr />
-    </>
+    </div>
   );
 };
 
