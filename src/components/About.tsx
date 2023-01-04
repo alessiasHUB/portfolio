@@ -146,7 +146,7 @@ const About: React.FunctionComponent<IAboutProps> = (props) => {
       <h1>Please take a look at my resume below</h1>
       <h3>
         Or download it{" "}
-        <a href="./data/cv.pdf" download>
+        <a href="../data/cv.pdf" download>
           here
         </a>
       </h3>
