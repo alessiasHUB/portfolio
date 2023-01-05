@@ -7,10 +7,10 @@ export interface IProjectsProps {}
 const Projects: React.FunctionComponent<IProjectsProps> = (props) => {
   const projectList = projects.map((project, index) => {
     return (
-      <div className="project" key={index}>
+      <div className="content" key={index}>
         <img src={project.image} alt="" />
         <h3>{project.title}</h3>
-        <p>{project.description}</p>
+        <p>{project.description}{project.descLink && <a href={project.descLink}>here</a>}</p>
         <a href={project.netlify}>netlify link</a>
         <span> </span>
         {project.gitHubBackEnd ? (

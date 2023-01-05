@@ -2,17 +2,19 @@ interface Project {
   title: string;
   image: string;
   description: string;
+  descLink?: string;
   skills: (
     | "JavaScript"
     | "TypeScript"
     | "React"
+    | "CSS"
     | "SQL"
     | "Node.js"
     | "Full stack"
     | "Postman"
     | "Beekeeper"
   )[];
-  // ['JavaScript', 'TypeScript', 'React', 'SQL', 'Node.js', 'Full stack', 'Postman', 'Beekeeper']
+  // ['JavaScript', 'TypeScript', 'React', 'CSS', SQL', 'Node.js', 'Full stack', 'Postman', 'Beekeeper']
   gitHubFrontEnd: string;
   gitHubBackEnd?: string;
   netlify: string;
@@ -44,31 +46,29 @@ export const projects: Project[] = [
     netlify: "https://my-great-snake-game.netlify.app/",
   },
   {
-    title: "",
+    title: "TV Shows DataBase",
     image: "",
-    description: "",
+    description: `A collaborative effort (with Maria Ten) to make a website that can search through 
+    TV-shows and their episodes. The API used can be found  `,
+    descLink: "https://www.tvmaze.com/",
     skills: [
       "JavaScript",
       "TypeScript",
       "React",
-      "SQL",
-      "Node.js",
-      "Full stack",
-      "Postman",
-      "Beekeeper",
+      "CSS",
     ],
-    gitHubFrontEnd: "",
-    gitHubBackEnd: "",
-    netlify: "",
+    gitHubFrontEnd: "https://github.com/mariatens/tv-shows-project",
+    netlify: "https://tv-shows-project-alli-maria.netlify.app/",
   },
   {
     title: "",
     image: "",
-    description: "",
+    description: ``,
     skills: [
       "JavaScript",
       "TypeScript",
       "React",
+      "CSS",
       "SQL",
       "Node.js",
       "Full stack",
