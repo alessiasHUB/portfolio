@@ -4,15 +4,14 @@
   padding: 0;
 }
 nav {
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  height: 50px;
-  position: absolute;
-  right: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 .nav-text {
   color: white;
@@ -23,12 +22,11 @@ nav {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .skill-btn {
-  background-color:rgb(200, 229, 255);
+  background-color: rgb(200, 229, 255);
   border: none;
   padding: 3px;
   margin-right: 5px;
 }
-
 
 .container {
   height: 100%;
@@ -46,6 +44,11 @@ body {
 }
 .home {
   background-image: url("imgs/matrix-356024.jpeg");
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 45px;
 }
 .footer {
   position: fixed;
