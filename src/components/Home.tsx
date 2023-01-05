@@ -6,7 +6,9 @@ export interface IHomeProps {}
 const Home: React.FunctionComponent<IHomeProps> = (props) => {
   return (
     <main className="content">
-      <p>Hello there!</p>
+      <div className="home">
+        <p>Hello there!</p>
+      </div>
     </main>
   );
 };

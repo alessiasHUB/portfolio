@@ -41,9 +41,11 @@ body {
 .content {
   height: 100%;
   width: 100%;
-  background-color: white;
   margin: 0;
   padding: 0;
+}
+.home {
+  background-image: url("imgs/matrix-356024.jpeg");
 }
 .footer {
   position: fixed;
