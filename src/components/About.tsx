@@ -168,93 +168,107 @@ const hobbies: string[] = [
 const About: React.FunctionComponent<IAboutProps> = (props) => {
   return (
     <div className="content">
-      <h1>Please take a look at my resume below</h1>
-      <h3>
-        Or download it <DownloadPDF />
-      </h3>
-      <h4>Introduction</h4>
-      <p className="introduction">{introduction}</p>
-      <hr />
-      <hr />
-      <h4>Education</h4>
-      {education.map((obj) => {
-        return (
-          <>
-            <p>{obj.date}</p>
-            <p>
-              {obj.school} - {obj.location}
-            </p>
-            <p>
-              <span>{obj.degree}</span> | <span>{obj.grades}</span>
-            </p>
-            <p>
-              {obj.description}
-              {obj.thesisLink && <a href={obj.thesisLink}>link</a>}
-            </p>
-          </>
-        );
-      })}
-      <hr />
-      <hr />
-      <h4>Experience</h4>
-      {experience.map((obj) => {
-        return (
-          <>
-            <p>{obj.date}</p>
-            <p>
-              {obj.company} | {obj.location}
-            </p>
-            <p>{obj.description}</p>
-            <hr />
-          </>
-        );
-      })}
-      <hr />
-      <hr />
-      <h4>Skills</h4>
-      {skills.map((el, index) => {
-        return (
-          <>
-            <span>{el}</span>
-            {index !== skills.length - 1 && <span>, </span>}
-          </>
-        );
-      })}
-      <hr />
-      <h4>Softwares</h4>
-      {softwares.map((el, index) => {
-        return (
-          <>
-            <span>{el}</span>
-            {index !== softwares.length - 1 && <span>, </span>}
-          </>
-        );
-      })}
-      <hr />
-      <h4>Languages</h4>
-      {languages.map((el, index) => {
-        return (
-          <>
-            <span>
-              {el.lingo} | level: {el.level}
-            </span>
-            {index !== languages.length - 1 && <br />}
-          </>
-        );
-      })}
-      <hr />
-      <h4>Hobbies</h4>
-      {hobbies.map((el, index) => {
-        return (
-          <>
-            <span>{el}</span>
-            {index !== hobbies.length - 1 && <br />}
-          </>
-        );
-      })}
-      <hr />
-      <hr />
-      <hr />
+      <div className="about">
+        <h1 className="about-top-title">
+          Please take a look at my resume below
+        </h1>
+        <h3 className="about-txt-download">
+          Or download it <DownloadPDF />
+        </h3>
+        <h4 className="about-title">Introduction</h4>
+        <p className="about-intro">{introduction}</p>
+        <hr />
+        <hr />
+        <h4 className="about-title">Education</h4>
+        {education.map((obj, index) => {
+          return (
+            <>
+              <div className="about-ed">
+                <p className="about-date">
+                  ({obj.date}) {obj.school} - {obj.location}
+                </p>
+                <p className="about-school"></p>
+                <p className="about-degree">
+                  <span>{obj.degree}</span> | <span>{obj.grades}</span>
+                </p>
+              </div>
+              <p className="about-desc">
+                {obj.description}
+                {obj.thesisLink && <a href={obj.thesisLink}>link</a>}
+              </p>
+            </>
+          );
+        })}
+        <hr />
+        <hr />
+        <h4 className="about-title">Experience</h4>
+        {experience.map((obj) => {
+          return (
+            <>
+              <p className="about-ex-title">
+                ({obj.date}) {obj.company} | {obj.location}
+              </p>
+              <p></p>
+              <p className="about-desc">{obj.description}</p>
+              <hr />
+            </>
+          );
+        })}
+        <hr />
+        <hr />
+        <h4 className="about-title">Skills</h4>
+        <div className="about-desc">
+          {skills.map((el, index) => {
+            return (
+              <>
+                <span>{el}</span>
+                {index !== skills.length - 1 && <span>, </span>}
+              </>
+            );
+          })}
+        </div>
+        <hr />
+        <h4 className="about-title">Softwares</h4>
+        <div className="about-desc">
+          {softwares.map((el, index) => {
+            return (
+              <>
+                <span>{el}</span>
+                {index !== softwares.length - 1 && <span>, </span>}
+              </>
+            );
+          })}
+        </div>
+        <hr />
+        <h4 className="about-title">Languages</h4>
+        {languages.map((el, index) => {
+          return (
+            <>
+              <span>
+                {el.lingo} | level: {el.level}
+              </span>
+              {index !== languages.length - 1 && <br />}
+            </>
+          );
+        })}
+        <hr />
+        <h4 className="about-title">Hobbies</h4>
+        {hobbies.map((el, index) => {
+          return (
+            <>
+              <span>{el}</span>
+              {index !== hobbies.length - 1 && <br />}
+            </>
+          );
+        })}
+        <hr />
+        <hr />
+        <hr />
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
     </div>
   );
 };
