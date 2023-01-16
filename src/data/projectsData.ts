@@ -8,13 +8,14 @@ interface Project {
     | "TypeScript"
     | "React"
     | "CSS"
-    | "SQL"
+    | "PostgreSQL"
     | "Node.js"
     | "Full stack"
     | "Postman"
     | "Beekeeper"
+    | "Adobe Illustrator"
   )[];
-  // ['JavaScript', 'TypeScript', 'React', 'CSS', SQL', 'Node.js', 'Full stack', 'Postman', 'Beekeeper']
+  // ['JavaScript', 'TypeScript', 'React', 'CSS', PostgreSQL', 'Node.js', 'Full stack', 'Postman', 'Beekeeper', "Adobe Illustrator"]
   gitHubFrontEnd: string;
   gitHubBackEnd?: string;
   netlify: string;
@@ -28,7 +29,7 @@ export const projects: Project[] = [
             A full-stack snake game with a database to manage highscores that the user will have the 
             option to add their name to, if they're skilled enough to get one of the top 10 scores. 
             Front-end made using React (Typescript) and deployed on Netlify, 
-            Back-end made with Node.js (Express), and the database in SQL, deployed on Render and 
+            Back-end made with Node.js (Express), and the database in PostgreSQL, deployed on Render and 
             ElephantSQL and managed on beekeeper studios.
             All images / icons used were made by me in Adobe Illustrator.
         `,
@@ -36,7 +37,7 @@ export const projects: Project[] = [
       "JavaScript",
       "TypeScript",
       "React",
-      "SQL",
+      "PostgreSQL",
       "Node.js",
       "Full stack",
       "Beekeeper",
@@ -48,8 +49,8 @@ export const projects: Project[] = [
   {
     title: "TV Shows DataBase",
     image: "",
-    description: `A collaborative effort (with Maria Ten) to make a website that can search through 
-    TV-shows and their episodes. The API used can be found  `,
+    description: `A collaborative effort (with Maria Ten) to make a website that can 
+    search through TV-shows and their episodes. The API used can be found `,
     descLink: "https://www.tvmaze.com/",
     skills: ["JavaScript", "TypeScript", "React", "CSS"],
     gitHubFrontEnd: "https://github.com/mariatens/tv-shows-project",
@@ -58,13 +59,15 @@ export const projects: Project[] = [
   {
     title: "To-do app",
     image: "",
-    description: ``,
+    description: `A full-stack app that allows any user to add todo tasks to the website, 
+    mark them as completed / not completed, edit individual tasks, delete all completed tasks or 
+    an individual task.`,
     skills: [
       "JavaScript",
       "TypeScript",
       "React",
       "CSS",
-      "SQL",
+      "PostgreSQL",
       "Node.js",
       "Full stack",
       "Postman",
@@ -75,22 +78,48 @@ export const projects: Project[] = [
     netlify: "https://to-do-full-stack.netlify.app/",
   },
   {
-    title: "",
+    title: "Breed Battle",
     image: "",
-    description: ``,
+    description: `A collaborative effort (team of 4) to create a full-stack app
+    that fetches dog images from an API and let's the user vote for either of two images.
+    The votes are then collected in a database and the top 10 voted breeds are then 
+    displayed in a leaderboard on the website, and top 3 are displayed on a podium. 
+    All artwork on the website is made by me in Adobe illustrator. The API used for dog images con be found `,
+    descLink: "https://dog.ceo/dog-api",
     skills: [
       "JavaScript",
       "TypeScript",
       "React",
       "CSS",
-      "SQL",
+      "PostgreSQL",
       "Node.js",
       "Full stack",
       "Postman",
       "Beekeeper",
+      "Adobe Illustrator"
     ],
-    gitHubFrontEnd: "",
-    gitHubBackEnd: "",
-    netlify: "",
+    gitHubFrontEnd: "https://github.com/syndercres/dog-breeds-front-end",
+    gitHubBackEnd: "https://github.com/syndercres/dog-voting-back-end",
+    netlify: "https://breed-battle.netlify.com/",
   },
+  // {
+  //   title: "",
+  //   image: "",
+  //   description: ``,
+  //   skills: [
+  //     "JavaScript",
+  //     "TypeScript",
+  //     "React",
+  //     "CSS",
+  //     "PostgreSQL",
+  //     "Node.js",
+  //     "Full stack",
+  //     "Postman",
+  //     "Beekeeper",
+  //     // "Adobe Illustrator"
+  //   ],
+  //   gitHubFrontEnd: "",
+  //   gitHubBackEnd: "",
+  //   netlify: "",
+  // },
 ];

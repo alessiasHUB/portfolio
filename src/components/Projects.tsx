@@ -14,7 +14,7 @@ const Projects: React.FunctionComponent<IProjectsProps> = (props) => {
           {project.description}
           {project.descLink && <a href={project.descLink}>here</a>}
         </p>
-        <a href={project.netlify}>netlify link</a>
+        <a href={project.netlify}>Netlify link</a>
         <span> </span>
         {project.gitHubBackEnd ? (
           <div>
