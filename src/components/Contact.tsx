@@ -4,14 +4,13 @@ import ContactForm from "./ContactForm";
 export interface IContactProps {}
 
 const Contact: React.FunctionComponent<IContactProps> = (props) => {
-
   // todo: contact form that goes to my email
   return (
     <div className="content">
-      <a href="mailto: borys.alessia@gmail.com">E-mail me!</a>
-      <br />
-      <a href="https://www.linkedin.com/in/alessiaborys/">LinkedIn</a>
-      <ContactForm />
+      <div className="container-contact">
+      <h2 className="mb-3">Contact Me</h2>
+        <ContactForm />
+      </div>
     </div>
   );
 };

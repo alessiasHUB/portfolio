@@ -2,6 +2,7 @@ import React from "react";
 
 const ContactForm: React.FC = () => {
   const [formStatus, setFormStatus] = React.useState("Send");
+  
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormStatus("Submitting...");
@@ -19,9 +20,9 @@ const ContactForm: React.FC = () => {
     };
     console.log(conFom);
   };
+
   return (
-    <div className="container mt-5">
-      <h2 className="mb-3">Contact Me</h2>
+    <div className="container-contact-form">
       <form onSubmit={onSubmit}>
         <div className="mb-3">
           <label className="form-label" htmlFor="name">

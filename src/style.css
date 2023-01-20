@@ -68,6 +68,10 @@ body {
   top: 45px;
 }
 
+
+.container-contact{
+  margin:50px 0px 0px 0px;
+}
 .about {
   margin: 0px 0px 0px 10px;
   min-height: 100vh;
