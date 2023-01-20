@@ -2,6 +2,8 @@
 export interface IContactProps {}
 
 const Contact: React.FunctionComponent<IContactProps> = (props) => {
+
+  // todo: contact form that goes to my email
   return (
     <div className="content">
       <a href="mailto: borys.alessia@gmail.com">E-mail me!</a>
