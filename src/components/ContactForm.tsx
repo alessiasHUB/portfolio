@@ -1,8 +1,29 @@
+import axios from "axios";
 import React from "react";
 
+interface IContactForm {
+  name: string;
+  email: string;
+  message: string;
+}
 const ContactForm: React.FC = () => {
   const [formStatus, setFormStatus] = React.useState("Send");
   
+  const baseUrl = process.env.NODE_ENV === "production"
+	? "https://portfolio-back-sptl.onrender.com"
+	: "localhost:4000"
+
+  const postContactForm = async (conFom:IContactForm) => {
+    try {
+        await axios.post(
+          `${baseUrl}/contact_form/`,
+          conFom
+        );
+    } catch (error) {
+      console.error("Woops... issue with POST request: ", error);
+    }
+  };
+
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormStatus("Submitting...");
@@ -13,12 +34,13 @@ const ContactForm: React.FC = () => {
     const message = e.currentTarget.elements.namedItem(
       "message"
     ) as HTMLTextAreaElement;
-    const conFom = {
+    const conFom :IContactForm = {
       name: name.value,
       email: email.value,
       message: message.value,
     };
     console.log(conFom);
+    postContactForm(conFom)
   };
 
   return (
