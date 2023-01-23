@@ -109,6 +109,9 @@ body {
 }
 
 .footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: space-between;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -117,5 +120,8 @@ body {
   padding-bottom: 15px;
   background-color: rgb(0, 0, 0);
   color: white;
+}
+.footer>div>a>img{
+  width: 20px;
 }
 
