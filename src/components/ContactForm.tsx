@@ -1,4 +1,3 @@
-import axios from "axios";
 import React from "react";
 
 // interface IContactForm {
@@ -8,10 +7,6 @@ import React from "react";
 // }
 const ContactForm: React.FC = () => {
   // const [formStatus, setFormStatus] = React.useState("Send");
-  
-  // const baseUrl = process.env.NODE_ENV === "production"
-	// ? "https://portfolio-back-sptl.onrender.com"
-	// : "localhost:4000"
 
   // const postContactForm = async (conFom:IContactForm) => {
   //   try {
@@ -24,7 +19,10 @@ const ContactForm: React.FC = () => {
   //   }
   // };
 
-  // const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmitForm = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  };
+  // const handleSubmitForm = (e: React.FormEvent<HTMLFormElement>) => {
   //   e.preventDefault();
   //   setFormStatus("Submitting...");
   //   const name = e.currentTarget.elements.namedItem("name") as HTMLInputElement;
@@ -45,10 +43,38 @@ const ContactForm: React.FC = () => {
   //   e.currentTarget.reset()
   // };
 
-  return ( <>
-    <a href="https://www.linkedin.com/in/alessiaborys/">linkedIN</a>
-    <br/>
-    <a href="mailto:borys.alessia@gmail.com/">email me</a>
+  return (
+    <>
+      <a href="https://www.linkedin.com/in/alessiaborys/">linkedIN</a>
+      <br />
+      <a href="mailto:borys.alessia@gmail.com/">email me</a>
+      <form
+        name="contact v1"
+        method="post"
+        data-netlify="true"
+        onSubmit={handleSubmitForm}
+      >
+        <input type="hidden" name="form-name" value="contact v1" />
+        <div>
+          <label>
+            Name <br />
+            <input type="text" name="name" />
+          </label>
+        </div>
+
+        <div>
+          <label htmlFor="email">E-mail</label>
+          <br />
+          <input id="email" type="email" name="email" />
+        </div>
+
+        <div>
+          <label htmlFor="email">Message</label>
+          <br />
+          <textarea name="message"></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
     </>
     // <div className="container-contact-form">
     //   <form onSubmit={onSubmit}>
