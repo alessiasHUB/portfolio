@@ -1,107 +1,99 @@
-import React from "react";
+import { useState } from "react";
+import { useForm, SubmitHandler } from "react-hook-form";
 
-// interface IContactForm {
-//   name: string;
-//   email: string;
-//   message: string;
-// }
-const ContactForm: React.FC = () => {
-  // const [formStatus, setFormStatus] = React.useState("Send");
+interface FormPost {
+  firstname?: string;
+  message?: string;
+  email?: string;
+}
 
-  // const postContactForm = async (conFom:IContactForm) => {
-  //   try {
-  //       await axios.post(
-  //         `${baseUrl}/contact_form/`,
-  //         {name: conFom.name, email:conFom.email ,message:conFom.message}
-  //       );
-  //   } catch (error) {
-  //     console.error("Woops... issue with POST request: ", error);
-  //   }
-  // };
-
-  const handleSubmitForm = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+function ContactForm(): JSX.Element {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const encode = (data: any) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
   };
-  // const handleSubmitForm = (e: React.FormEvent<HTMLFormElement>) => {
-  //   e.preventDefault();
-  //   setFormStatus("Submitting...");
-  //   const name = e.currentTarget.elements.namedItem("name") as HTMLInputElement;
-  //   const email = e.currentTarget.elements.namedItem(
-  //     "email"
-  //   ) as HTMLInputElement;
-  //   const message = e.currentTarget.elements.namedItem(
-  //     "message"
-  //   ) as HTMLTextAreaElement;
-  //   const conFom :IContactForm = {
-  //     name: name.value,
-  //     email: email.value,
-  //     message: message.value,
-  //   };
-  //   console.log(conFom);
-  //   postContactForm(conFom)
-  //   .then(()=>setFormStatus("Send"))
-  //   e.currentTarget.reset()
-  // };
+
+  const [submitted, setSubmitted] = useState(false);
+
+  const emailRegex =
+    // eslint-disable-next-line no-control-regex
+    /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormPost>();
+  const onSubmit: SubmitHandler<FormPost> = (data) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...data }),
+    })
+      .then(() => console.log("Success!"))
+      .catch((error) => console.log(error));
+
+    setSubmitted(true);
+    console.log(data);
+  };
 
   return (
-    <>
-      <a href="https://www.linkedin.com/in/alessiaborys/">linkedIN</a>
+    <div>
+      {/* <a href="https://www.linkedin.com/in/alessiaborys/">linkedIN</a>
       <br />
-      <a href="mailto:borys.alessia@gmail.com/">email me</a>
-      <form
-        name="contact v1"
-        method="post"
-        data-netlify="true"
-        onSubmit={handleSubmitForm}
-      >
-        <input type="hidden" name="form-name" value="contact v1" />
-        <div>
-          <label>
-            Name <br />
-            <input type="text" name="name" />
-          </label>
-        </div>
-
-        <div>
-          <label htmlFor="email">E-mail</label>
-          <br />
-          <input id="email" type="email" name="email" />
-        </div>
-
-        <div>
-          <label htmlFor="email">Message</label>
-          <br />
-          <textarea name="message"></textarea>
-        </div>
-        <button type="submit">Send</button>
-      </form>
-    </>
-    // <div className="container-contact-form">
-    //   <form onSubmit={onSubmit}>
-    //     <div className="mb-3">
-    //       <label className="form-label" htmlFor="name">
-    //         Name
-    //       </label>
-    //       <input className="form-control" type="text" id="name" required />
-    //     </div>
-    //     <div className="mb-3">
-    //       <label className="form-label" htmlFor="email">
-    //         Email
-    //       </label>
-    //       <input className="form-control" type="email" id="email" required />
-    //     </div>
-    //     <div className="mb-3">
-    //       <label className="form-label" htmlFor="message">
-    //         Message
-    //       </label>
-    //       <textarea className="form-control" id="message" required />
-    //     </div>
-    //     <button className="btn btn-danger" type="submit">
-    //       {formStatus}
-    //     </button>
-    //   </form>
-    // </div>
+      <a href="mailto:borys.alessia@gmail.com/">email me</a> */}
+      {!submitted && (
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          onSubmit={handleSubmit(onSubmit)}
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <div>
+            <div>
+              <input
+                type="text"
+                id="firstname"
+                placeholder="First Name"
+                {...register("firstname")}
+              />
+            </div>
+          </div>
+          <div>
+            <input
+              type="text"
+              id="email"
+              placeholder="Email"
+              {...register("email", { required: true, pattern: emailRegex })}
+            />
+            {errors.email?.type === "required" ? (
+              <p>Email is required</p>
+            ) : errors.email?.type === "pattern" ? (
+              <p>Invalid email</p>
+            ) : (
+              <></>
+            )}
+          </div>
+          <div>
+            <textarea
+              id="message"
+              placeholder="Message"
+              {...register("message")}
+            ></textarea>
+          </div>
+          <div>
+            <button type="submit">Get Access</button>
+          </div>
+        </form>
+      )}
+      {submitted && <h5>Thanks for submitting! We&apos;ll reach out ASAP!</h5>}
+    </div>
   );
-};
+}
 
 export default ContactForm;
