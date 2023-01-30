@@ -102,6 +102,53 @@ export const projects: Project[] = [
     gitHubBackEnd: "https://github.com/syndercres/dog-voting-back-end",
     netlify: "https://breed-battle.netlify.com/",
   },
+  {
+    title: "Snip Snap",
+    image: "",
+    description: `A collaborative effort (team of 3) to create a full-stack app. 
+    The task was to create a "paste bin app" where the user can leave a 'snip-snap' 
+    which other users can then comment on. Other features; be able to delete comments 
+    and, or snip-snaps.`,
+    skills: [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "CSS",
+      "PostgreSQL",
+      "Node.js",
+      "Full stack",
+      "Postman",
+      "Beekeeper",
+    ],
+    gitHubFrontEnd: "https://github.com/maghfoor-a/pair-project-week1-frontend",
+    gitHubBackEnd: "https://github.com/maghfoor-a/pair-project-week1-backend",
+    netlify: "https://snip-snap-pro.netlify.app/",
+  },
+  {
+    title: "Study Resource Catalog",
+    image: "",
+    description: `A collaborative effort (team of 4) to create a full-stack app. 
+    The task was to make a resource bank for students, where the user, if logged in, can
+    post a new resource (as long as it's not already in the system), comment, like or dislike 
+    other resources and add resources to their 'study-list'. The website feature several search 
+    bars and filters and has a home-page that displays the latest added resources and the
+    top liked ones.`,
+    skills: [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "CSS",
+      "PostgreSQL",
+      "Node.js",
+      "Full stack",
+      "Postman",
+      "Beekeeper",
+      "Adobe Illustrator"
+    ],
+    gitHubFrontEnd: "https://github.com/alessiasHUB/study-resource-catalog-front",
+    gitHubBackEnd: "https://github.com/alessiasHUB/study-resource-catalog-back",
+    netlify: "https://study-resource-catalog.netlify.app/",
+  },
   // {
   //   title: "",
   //   image: "",
