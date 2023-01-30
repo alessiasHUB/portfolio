@@ -35,15 +35,43 @@ nav {
   color: rgb(255, 206, 47);
 }
 
-.project {
-  color: rgb(9, 9, 39);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.sub-title{
+  margin: 0px 0px 10px 10px;
 }
-.skill-btn {
-  background-color: rgb(200, 229, 255);
+.project {
+  border-radius: 5px;
+  border-color: rgb(253, 236, 206);
+  border-style: solid;
+  border-width: 1px;
+  margin: 0px 10px 10px 10px;
+  padding: 15px;
+  background-color: rgb(255, 246, 240);
+  color:black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}.netlify-link{
+  background-color: rgb(103, 197, 255);
   border: none;
-  padding: 3px;
+  border-radius: 3px;
+  padding: 5px;
   margin-right: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}.github-link{
+  background-color: rgb(73, 237, 255);
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  margin-right: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}.skill-btn {
+  background-color: rgb(255, 102, 0);
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 2px 5px 2px 0px;
 }
 
 html,
@@ -56,10 +84,11 @@ body {
 }
 
 .content {
-  margin-top: calc(100px - 50px);
+  /* margin-top: calc(100px - 50px);
+  margin-bottom: calc(100px - 50px); */
+  margin:100px 0px 100px 0px;
   height: 100%;
   width: 100%;
-  margin-bottom: calc(100px - 50px);
 }
 .home {
   background-image: url("imgs/background-home.jpg");
@@ -70,7 +99,6 @@ body {
   left: 0;
   top: 45px;
 }
-
 
 .container-contact{
   margin:50px 0px 0px 0px;

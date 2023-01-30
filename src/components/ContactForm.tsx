@@ -91,7 +91,7 @@ function ContactForm(): JSX.Element {
           </div>
         </form>
       )}
-      {submitted && <h5>Thanks for submitting! We&apos;ll reach out ASAP!</h5>}
+      {submitted && <h5>Thanks for submitting!</h5>}
     </div>
   );
 }

@@ -7,24 +7,25 @@ export interface IProjectsProps {}
 const Projects: React.FunctionComponent<IProjectsProps> = (props) => {
   const projectList = projects.map((project, index) => {
     return (
-      <div className="content" key={index}>
+      <div key={index} className="project">
         <img src={project.image} alt="" />
         <h3>{project.title}</h3>
         <p>
           {project.description}
           {project.descLink && <a href={project.descLink}>here</a>}
         </p>
-        <a href={project.netlify}>Netlify link</a>
+        <br/>
+        <a className="netlify-link" href={project.netlify}>Netlify</a>
         <span> </span>
         {project.gitHubBackEnd ? (
-          <div>
-            <a href={project.gitHubFrontEnd}>GitHub front-end link</a>
-            <br />
-            <a href={project.gitHubBackEnd}>GitHub back-end link</a>
-          </div>
+          <>
+            <a className="github-link" href={project.gitHubFrontEnd}>GitHub front-end</a>
+            <a className="github-link" href={project.gitHubBackEnd}>GitHub back-end</a>
+            </>
         ) : (
-          <a href={project.gitHubFrontEnd}>GitHub link</a>
+          <a className="github-link" href={project.gitHubFrontEnd}>GitHub</a>
         )}
+        <br/><br/>
         <p>
           {project.skills.map((skill, index) => {
             return (
@@ -42,6 +43,8 @@ const Projects: React.FunctionComponent<IProjectsProps> = (props) => {
     <div className="content">
       <h2 className="sub-title">My projects</h2>
       {projectList}
+      <br/>
+      <br/><br/>
     </div>
   );
 };
