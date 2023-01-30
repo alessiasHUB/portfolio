@@ -10,7 +10,7 @@
 }*/
 
 * {
-  font-family: "Courier New", Courier, monospace;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin: 0;
   padding: 0;
   /* cursor: none; */
@@ -23,15 +23,16 @@ nav {
   padding: 15px 15px 15px 0;
   /* height: 50px ; */
   background-color: rgb(0, 0, 0);
-  color: white;
+  color: white; 
 }
 .nav-text {
   color: white;
-  padding-left: 30px;
+  padding-right: 30px;
   text-decoration: none;
+  float: right;
 }
 .nav-text:hover {
-  color: greenyellow;
+  color: rgb(255, 206, 47);
 }
 
 .project {
@@ -55,6 +56,7 @@ body {
 }
 
 .content {
+  margin-top: calc(100px - 50px);
   height: 100%;
   width: 100%;
   margin-bottom: calc(100px - 50px);
@@ -108,7 +110,6 @@ body {
 
 .footer {
   display: flex;
-  flex-wrap: wrap;
   justify-items: space-between;
   position: fixed;
   bottom: 0;
@@ -119,7 +120,11 @@ body {
   background-color: rgba(24, 24, 24, 0.837);
   color: white;
 }
-.footer>div>a>img{
-  width: 20px;
-}
 
+.footer>div>a>img{
+  width: 16px;
+}
+.footer>div>a{
+  text-decoration: none;
+  color:white;
+}

@@ -87,7 +87,7 @@ function ContactForm(): JSX.Element {
             ></textarea>
           </div>
           <div>
-            <button type="submit">Get Access</button>
+            <button type="submit">Send</button>
           </div>
         </form>
       )}
