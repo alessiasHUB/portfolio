@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface IAboutProps {}
 
@@ -166,6 +166,13 @@ const hobbies: string[] = [
 ];
 
 const About: React.FunctionComponent<IAboutProps> = (props) => {
+  const [showIntroduction, setShowIntroduction] = useState(false);
+  const [showEducation, setShowEducation] = useState(false);
+  const [showExperience, setShowExperience] = useState(false);
+  const [showSkills, setShowSkills] = useState(false);
+  const [showLanguages, setShowLanguages] = useState(false);
+  const [showHobbies, setShowHobbies] = useState(false);
+
   return (
     <div className="content">
       <div className="about">
@@ -176,94 +183,134 @@ const About: React.FunctionComponent<IAboutProps> = (props) => {
           Or download it <DownloadPDF />
         </h3>
         <h4 className="about-title">Introduction</h4>
-        <p className="about-intro">{introduction}</p>
+        <button
+          className="show-btn"
+          onClick={() => setShowIntroduction(!showIntroduction)}
+        >
+          {showIntroduction ? "▼" : "▲"}
+        </button>
+        {showIntroduction && <p className="about-intro">{introduction}</p>}
         <hr />
         <hr />
         <h4 className="about-title">Education</h4>
-        {education.map((obj, index) => {
-          return (
-            <>
-              <div className="about-ed">
-                <p className="about-date">
-                  ({obj.date}) {obj.school} - {obj.location}
+        <button
+          className="show-btn"
+          onClick={() => setShowEducation(!showEducation)}
+        >
+          {showEducation ? "▼" : "▲"}
+        </button>
+        {showEducation &&
+          education.map((obj, index) => {
+            return (
+              <>
+                <div className="about-ed">
+                  <p className="about-date">
+                    ({obj.date}) {obj.school} - {obj.location}
+                  </p>
+                  <p className="about-school"></p>
+                  <p className="about-degree">
+                    <span>{obj.degree}</span> | <span>{obj.grades}</span>
+                  </p>
+                </div>
+                <p className="about-desc">
+                  {obj.description}
+                  {obj.thesisLink && <a href={obj.thesisLink}>link</a>}
                 </p>
-                <p className="about-school"></p>
-                <p className="about-degree">
-                  <span>{obj.degree}</span> | <span>{obj.grades}</span>
-                </p>
-              </div>
-              <p className="about-desc">
-                {obj.description}
-                {obj.thesisLink && <a href={obj.thesisLink}>link</a>}
-              </p>
-            </>
-          );
-        })}
+              </>
+            );
+          })}
         <hr />
         <hr />
         <h4 className="about-title">Experience</h4>
-        {experience.map((obj) => {
-          return (
-            <>
-              <p className="about-ex-title">
-                ({obj.date}) {obj.company} | {obj.location}
-              </p>
-              <p></p>
-              <p className="about-desc">{obj.description}</p>
-              <hr />
-            </>
-          );
-        })}
+        <button
+          className="show-btn"
+          onClick={() => setShowExperience(!showExperience)}
+        >
+          {showExperience ? "▼" : "▲"}
+        </button>
+        {showExperience &&
+          experience.map((obj) => {
+            return (
+              <>
+                <p className="about-ex-title">
+                  ({obj.date}) {obj.company} | {obj.location}
+                </p>
+                <p></p>
+                <p className="about-desc">{obj.description}</p>
+                <hr />
+              </>
+            );
+          })}
         <hr />
         <hr />
         <h4 className="about-title">Skills</h4>
-        <div className="about-desc">
-          {skills.map((el, index) => {
-            return (
-              <>
-                <span>{el}</span>
-                {index !== skills.length - 1 && <span>, </span>}
-              </>
-            );
-          })}
-        </div>
-        <hr />
-        <h4 className="about-title">Softwares</h4>
-        <div className="about-desc">
-          {softwares.map((el, index) => {
-            return (
-              <>
-                <span>{el}</span>
-                {index !== softwares.length - 1 && <span>, </span>}
-              </>
-            );
-          })}
-        </div>
+        <button className="show-btn" onClick={() => setShowSkills(!showSkills)}>
+          {showSkills ? "▼" : "▲"}
+        </button>
+        {showSkills && (
+          <>
+            <div className="about-desc">
+              {skills.map((el, index) => {
+                return (
+                  <>
+                    <span>{el}</span>
+                    {index !== skills.length - 1 && <span>, </span>}
+                  </>
+                );
+              })}
+            </div>
+            <hr />
+            <div className="about-desc">
+              {softwares.map((el, index) => {
+                return (
+                  <>
+                    <span>{el}</span>
+                    {index !== softwares.length - 1 && <span>, </span>}
+                  </>
+                );
+              })}
+            </div>
+          </>
+        )}
         <hr />
         <h4 className="about-title">Languages</h4>
-        {languages.map((el, index) => {
-          return (
-            <>
-              <span>
-                {el.lingo} | level: {el.level}
-              </span>
-              {index !== languages.length - 1 && <br />}
-            </>
-          );
-        })}
+        <button
+          className="show-btn"
+          onClick={() => setShowLanguages(!showLanguages)}
+        >
+          {showLanguages ? "▼" : "▲"}
+        </button>
+        {showLanguages &&
+          languages.map((el, index) => {
+            return (
+              <>
+                <span>
+                  {el.lingo} | level: {el.level}
+                </span>
+                {index !== languages.length - 1 && <br />}
+              </>
+            );
+          })}
         <hr />
         <h4 className="about-title">Hobbies</h4>
-        {hobbies.map((el, index) => {
-          return (
-            <>
-              <span>{el}</span>
-              {index !== hobbies.length - 1 && <br />}
-            </>
-          );
-        })}
+        <button
+          className="show-btn"
+          onClick={() => setShowHobbies(!showHobbies)}
+        >
+          {showHobbies ? "▼" : "▲"}
+        </button>
+        {showHobbies &&
+          hobbies.map((el, index) => {
+            return (
+              <>
+                <span>{el}</span>
+                {index !== hobbies.length - 1 && <br />}
+              </>
+            );
+          })}
         <hr />
         <hr />
-        <hr />
+        <br />
         <br />
         <br />
         <br />
