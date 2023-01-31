@@ -120,9 +120,9 @@ export const projects: Project[] = [
       "Postman",
       "Beekeeper",
     ],
-    gitHubFrontEnd: "https://github.com/maghfoor-a/pair-project-week1-frontend",
-    gitHubBackEnd: "https://github.com/maghfoor-a/pair-project-week1-backend",
-    netlify: "https://snip-snap-pro.netlify.app/",
+    gitHubFrontEnd: "https://github.com/alessiasHUB/snip-snap-front",
+    gitHubBackEnd: "https://github.com/alessiasHUB/snip-snap-back",
+    netlify: "https://snip-snaps.netlify.app/",
   },
   {
     title: "Study Resource Catalog",
