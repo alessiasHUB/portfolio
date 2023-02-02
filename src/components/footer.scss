@@ -11,30 +11,27 @@
   list-style-type: none;
 }
 
-.footer-container i {
+.footer-container a {
   font-size: 30px;
   margin: 10px 20px;
   color: #E8EEF2;
 }
 
-.bg-envelope:hover {
+.footer-envelope-icon:hover {
   color: #14A1A4;
   transition-duration: 1s;
 }
 
-.bg-github-footer:hover {
+.footer-github-icon:hover {
   color: #657C8A;
   transition-duration: 1s;
 }
 
-.bg-linkedin-footer:hover {
+.footer-linkedin-icon:hover {
   color: #1085BA;
   transition-duration: 1s;
 }
 
-.footer-container li {
-  margin: 10px auto;
-}
 
 .footer-container p {
   position: absolute;
@@ -43,4 +40,8 @@
   right: 5px;
   font-size: 12px;
   font-weight: 100;
+}
+
+ p {
+    max-width: 200px;
 }
