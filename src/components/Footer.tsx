@@ -5,40 +5,42 @@ import "./footer.scss";
 
 function Footer(): JSX.Element {
   return (
-    <div className="footer-container">
-      <div className="footer-about">
+    <div className="container">
+      <div className="container__row">
+      <div className="container__col">
         <h1>About</h1>
         <img src="" alt="" />
         <p>Alessia Borys is a junior full-stack software developer.</p>
       </div>
-      <div className="footer-contact-container">
+      <div className="container__col">x</div>
+      <div className="container__col">
         <h1>Contact</h1>
         <p>
           If you have any questions about anything, or just want to say hi, feel
           free to contact me. You can find my social pages and email below:
         </p>
-        <div className="footer-links">
+        <div className="links">
           <a href="https://github.com/alessiasHUB/">
             <FontAwesomeIcon
               icon={faLinkedin}
-              className="footer-linkedin-icon"
+              className="linkedin-icon"
             />
           </a>
           <a href="https://www.linkedin.com/in/alessiaborys/">
-            <FontAwesomeIcon icon={faGithub} className="footer-github-icon" />
+            <FontAwesomeIcon icon={faGithub} className="github-icon" />
           </a>
           {/* <a href="https://www.codewars.com/alessiasHUB/">
-            <FontAwesomeIcon icon={} className="footer-codewars-icon" />
+            <FontAwesomeIcon icon={} className="codewars-icon" />
           </a> */}
           <a href="mailto:borys.alessia@gmail.com">
             <FontAwesomeIcon
               icon={faEnvelope}
-              className="footer-envelope-icon"
+              className="envelope-icon"
             />
           </a>
         </div>
       </div>
-      <p>Copyright &copy; Alessia Borys 2023</p>
+      </div>
     </div>
   );
 }
