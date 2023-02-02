@@ -1,4 +1,4 @@
-import ContactForm from "./ContactForm";
+// import ContactForm from "./ContactForm";
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface IContactProps {}
@@ -9,7 +9,7 @@ const Contact: React.FunctionComponent<IContactProps> = (props) => {
     <div className="content">
       <div className="container-contact">
       <h2 className="mb-3">Contact Me</h2>
-        <ContactForm />
+        {/* <ContactForm /> */}
       </div>
     </div>
   );
