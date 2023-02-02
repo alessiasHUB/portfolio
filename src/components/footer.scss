@@ -1,0 +1,46 @@
+.footer-container {
+  height: 105px;
+  background-color: #2F323A;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #E8EEF2;
+  padding: 20px 30px 0px 0px;
+  align-items: baseline;
+  list-style-type: none;
+}
+
+.footer-container i {
+  font-size: 30px;
+  margin: 10px 20px;
+  color: #E8EEF2;
+}
+
+.bg-envelope:hover {
+  color: #14A1A4;
+  transition-duration: 1s;
+}
+
+.bg-github-footer:hover {
+  color: #657C8A;
+  transition-duration: 1s;
+}
+
+.bg-linkedin-footer:hover {
+  color: #1085BA;
+  transition-duration: 1s;
+}
+
+.footer-container li {
+  margin: 10px auto;
+}
+
+.footer-container p {
+  position: absolute;
+  margin: 0;
+  bottom: 2px;
+  right: 5px;
+  font-size: 12px;
+  font-weight: 100;
+}
