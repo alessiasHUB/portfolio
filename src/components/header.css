@@ -1,26 +1,59 @@
 .header {
-  background-color: aliceblue;
-  margin-bottom: 10px;
+  background-color: rgb(42, 42, 43);
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
+/*-----name-----*/
 .title-container {
-  margin-left: 20px;
+  margin: 0px 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 .header-title {
-  font-size: 40px;
-  margin: 20px 1px;
+    color: white;
+  font-size: 30px;
+  margin: 5px 1px;
   user-select: none;
   transition: transform 0.2s;
   font-family: "Erica One", cursive;
   /* font-family: "Modak", cursive; */
 }
-
 .header-title:hover {
   transform: scale(1.5);
 }
-
 .empty-space {
     padding: 0px 2px;
 }
+
+/*-----icons-----*/
+.links {
+    margin:20px 40px;
+}
+.linkedin-icon{
+    height:40px;
+    color: white;
+    margin: 0px 5px;
+  }
+  .github-icon{
+    height:40px;
+    color: white;
+    margin: 0px 5px;
+  }
+  .envelope-icon{
+    height:40px;
+    color: white;
+    margin: 0px 5px;
+  }
+  
+  .linkedin-icon:hover{
+    color:rgb(10, 102, 194);
+  }
+  .github-icon:hover{
+    color:rgb(0, 0, 0);
+  }
+  .envelope-icon:hover{
+    color:rgb(19, 223, 223);
+  }
