@@ -5,12 +5,11 @@ import "./landingPage.css";
 import interactresText from "../imgs/interactiveresumetxt.png"
 
 export default function LandingPage(): JSX.Element {
-  const intertxtHeight= 40
   return (
     <>
       <Header />
       <div className="interactive-resume-div">
-    <img src={interactresText} alt="txt" height={intertxtHeight}/>
+      <img className="interactive-resume-title" src={interactresText} alt="txt"/>
         <p>
           Let's go over my resume, but make it a little more fun with this
           interactive game style website

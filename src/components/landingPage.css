@@ -4,8 +4,9 @@ body {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.interactive-resume.div > h1 {
-    color: white;
+.interactive-resume-title {
+    margin: 20px 0px 10px 10px;
+    height:30px;
 }
 .interactive-resume.div {
     max-width: 100px;
