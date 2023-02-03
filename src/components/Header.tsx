@@ -2,11 +2,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./header.css";
+import A from "../imgs/letters/A.png"
 
 function Header(): JSX.Element {
+  const letterHeight = 30
+  
   return (
     <header className="header">
       <div className="title-container">
+        <img src={A} alt="A" height={letterHeight}/>
         <p className="header-title">A</p>
         <p className="header-title">L</p>
         <p className="header-title">E</p>
