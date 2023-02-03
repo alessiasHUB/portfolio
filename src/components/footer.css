@@ -1,5 +1,5 @@
 .footer-container {
-  background-color: rgb(139, 139, 139);
+  background-color: rgb(59, 59, 59);
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -21,8 +21,9 @@
 .about-container {
   grid-column: "about";
 }
-.about-container > h1 {
+.about-container > img {
   margin: 20px 0px 10px 0px;
+  height:20px;
 }
 .about-section {
   display: flex;
@@ -30,10 +31,12 @@
 }
 .portrait-pic {
   height: 100px;
+  color: white;
 }
 .about-section > p {
   width: 150px;
   margin-left: 20px;
+  color: white;
 }
 
 /*------contact------*/
@@ -41,13 +44,15 @@
   grid-column: "contact";
   margin-right: 20px;
 }
-.contact-container > h1 {
+.contact-container > img {
   margin: 20px 0px 10px 0px;
+  height:20px;
 }
 .contact-container > p {
   /* max-width: 200px; */
   width: 250px;
   margin: 10px 0px;
+  color: white
 }
 /*icons*/
 .links {
