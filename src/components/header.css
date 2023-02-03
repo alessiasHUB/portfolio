@@ -1,0 +1,26 @@
+.header {
+  background-color: aliceblue;
+  margin-bottom: 10px;
+}
+.title-container {
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.header-title {
+  font-size: 40px;
+  margin: 20px 1px;
+  user-select: none;
+  transition: transform 0.2s;
+  font-family: "Erica One", cursive;
+  /* font-family: "Modak", cursive; */
+}
+
+.header-title:hover {
+  transform: scale(1.5);
+}
+
+.empty-space {
+    padding: 0px 2px;
+}

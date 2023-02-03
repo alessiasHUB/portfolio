@@ -1,0 +1,48 @@
+
+
+
+/* @use "sass:math";
+
+$grid-width: 2000px;
+$gutter-vertical: 40px;
+$gutter-horizontal: 40px;
+
+* {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  // background: pink;
+}
+.footer-container {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.container__row {
+  max-width: $grid-width;
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  [class^="col-"] {
+    float: left;
+    background-color: orange;
+    padding: 1rem;
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+  }
+} */

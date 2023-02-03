@@ -1,45 +1,39 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import "./footer.scss";
+import "./footer.css";
 
 function Footer(): JSX.Element {
   return (
-    <div className="container">
+    <div className="footer-container">
       <div className="container__row">
-      <div className="container__col">
-        <h1>About</h1>
-        <img src="" alt="" />
-        <p>Alessia Borys is a junior full-stack software developer.</p>
-      </div>
-      <div className="container__col">x</div>
-      <div className="container__col">
-        <h1>Contact</h1>
-        <p>
-          If you have any questions about anything, or just want to say hi, feel
-          free to contact me. You can find my social pages and email below:
-        </p>
-        <div className="links">
-          <a href="https://github.com/alessiasHUB/">
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className="linkedin-icon"
-            />
-          </a>
-          <a href="https://www.linkedin.com/in/alessiaborys/">
-            <FontAwesomeIcon icon={faGithub} className="github-icon" />
-          </a>
-          {/* <a href="https://www.codewars.com/alessiasHUB/">
+        <div className="col-1-of-2">
+          <h1>About</h1>
+          <img src="" alt="" />
+          <p>Alessia Borys is a junior full-stack software developer.</p>
+        </div>
+        <div className="col-1-of-2">
+          <h1>Contact</h1>
+          <p>
+            If you have any questions about anything, or just want to say hi,
+            feel free to contact me. You can find my social pages and email
+            below:
+          </p>
+          <div className="links">
+            <a href="https://github.com/alessiasHUB/">
+              <FontAwesomeIcon icon={faLinkedin} className="linkedin-icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/alessiaborys/">
+              <FontAwesomeIcon icon={faGithub} className="github-icon" />
+            </a>
+            {/* <a href="https://www.codewars.com/alessiasHUB/">
             <FontAwesomeIcon icon={} className="codewars-icon" />
           </a> */}
-          <a href="mailto:borys.alessia@gmail.com">
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              className="envelope-icon"
-            />
-          </a>
+            <a href="mailto:borys.alessia@gmail.com">
+              <FontAwesomeIcon icon={faEnvelope} className="envelope-icon" />
+            </a>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );
