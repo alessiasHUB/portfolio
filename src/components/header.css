@@ -13,47 +13,47 @@
   align-items: center;
 }
 .header-title {
-    color: white;
+  color: white;
   font-size: 30px;
   margin: 5px 1px;
   user-select: none;
-  transition: transform 0.2s;
+  transition: transform 0.3s;
   font-family: "Erica One", cursive;
   /* font-family: "Modak", cursive; */
 }
 .header-title:hover {
-  transform: scale(1.5);
+  transform: scale(1.8);
 }
 .empty-space {
     padding: 0px 2px;
 }
 
 /*-----icons-----*/
-.links {
-    margin:20px 40px;
+.links-header {
+    margin:18px 40px 15px 0px;
 }
-.linkedin-icon{
-    height:40px;
+.linkedin-icon-header{
+    height:30px;
     color: white;
     margin: 0px 5px;
   }
-  .github-icon{
-    height:40px;
+  .github-icon-header{
+    height:30px;
     color: white;
     margin: 0px 5px;
   }
-  .envelope-icon{
-    height:40px;
+  .envelope-icon-header{
+    height:30px;
     color: white;
     margin: 0px 5px;
   }
   
-  .linkedin-icon:hover{
+  .linkedin-icon-header:hover{
     color:rgb(10, 102, 194);
   }
-  .github-icon:hover{
+  .github-icon-header:hover{
     color:rgb(0, 0, 0);
   }
-  .envelope-icon:hover{
+  .envelope-icon-header:hover{
     color:rgb(19, 223, 223);
   }
