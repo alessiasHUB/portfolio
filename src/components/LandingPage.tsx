@@ -6,10 +6,11 @@ export default function LandingPage(): JSX.Element {
   return (
     <>
       <Header />
-      <p>landing page</p>
+      <div className="interactive-resume-div">
       <Link className="nav-text" to="/interactive-resume">
         Interactive resume
       </Link>
+      </div>
       <Footer />
     </>
   );

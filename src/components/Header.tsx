@@ -21,20 +21,20 @@ function Header(): JSX.Element {
         <p className="header-title">Y</p>
         <p className="header-title">S</p>
       </div>
-          <div className="links-header">
-            <a href="https://github.com/alessiasHUB/">
-              <FontAwesomeIcon icon={faLinkedin} className="linkedin-icon-header" />
-            </a>
-            <a href="https://www.linkedin.com/in/alessiaborys/">
-              <FontAwesomeIcon icon={faGithub} className="github-icon-header" />
-            </a>
-            {/* <a href="https://www.codewars.com/alessiasHUB/">
+      <div className="links-header">
+        <a href="https://github.com/alessiasHUB/">
+          <FontAwesomeIcon icon={faLinkedin} className="linkedin-icon-header" />
+        </a>
+        <a href="https://www.linkedin.com/in/alessiaborys/">
+          <FontAwesomeIcon icon={faGithub} className="github-icon-header" />
+        </a>
+        {/* <a href="https://www.codewars.com/alessiasHUB/">
             <FontAwesomeIcon icon={} className="codewars-icon-header" />
           </a> */}
-            <a href="mailto:borys.alessia@gmail.com">
-              <FontAwesomeIcon icon={faEnvelope} className="envelope-icon-header" />
-            </a>
-          </div>
+        <a href="mailto:borys.alessia@gmail.com">
+          <FontAwesomeIcon icon={faEnvelope} className="envelope-icon-header" />
+        </a>
+      </div>
     </header>
   );
 }

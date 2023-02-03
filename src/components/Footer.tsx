@@ -10,9 +10,9 @@ function Footer(): JSX.Element {
         <div className="about-container">
           <h1>About</h1>
           <div className="about-section">
-          <FontAwesomeIcon icon={faFaceSmile} className="portrait-pic" />
-          {/* <img src="#" alt="" /> */}
-          <p>Alessia Borys is a junior full-stack software developer.</p>
+            <FontAwesomeIcon icon={faFaceSmile} className="portrait-pic" />
+            {/* <img src="#" alt="" /> */}
+            <p>Alessia Borys is a junior full-stack software developer.</p>
           </div>
         </div>
         <div className="contact-container">

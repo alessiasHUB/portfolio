@@ -17,7 +17,7 @@
 .about-container {
   grid-column: "about";
 }
-.about-container>h1 {
+.about-container > h1 {
   margin: 20px 0px 10px 0px;
 }
 .about-section {
@@ -25,54 +25,54 @@
   flex-wrap: wrap;
 }
 .portrait-pic {
-  height:100px;
+  height: 100px;
 }
-.about-section>p{
+.about-section > p {
   width: 150px;
-  margin-left:20px;
+  margin-left: 20px;
 }
 
 /*------contact------*/
 .contact-container {
   grid-column: "contact";
-  margin-right:20px;
+  margin-right: 20px;
 }
-.contact-container>h1{
-  margin: 20px 0px 10px 0px
+.contact-container > h1 {
+  margin: 20px 0px 10px 0px;
 }
-.contact-container>p {
+.contact-container > p {
   /* max-width: 200px; */
   width: 250px;
-  margin: 10px 0px
+  margin: 10px 0px;
 }
 /*icons*/
-.links{
+.links {
   margin: 15px 20px;
 }
-.linkedin-icon{
-  height:40px;
+.linkedin-icon {
+  height: 40px;
   color: white;
   margin: 0px 5px;
 }
-.github-icon{
-  height:40px;
+.github-icon {
+  height: 40px;
   color: white;
   margin: 0px 5px;
 }
-.envelope-icon{
-  height:40px;
+.envelope-icon {
+  height: 40px;
   color: white;
   margin: 0px 5px;
 }
 
-.linkedin-icon:hover{
-  color:rgb(10, 102, 194);
+.linkedin-icon:hover {
+  color: rgb(10, 102, 194);
 }
-.github-icon:hover{
-  color:rgb(0, 0, 0);
+.github-icon:hover {
+  color: rgb(0, 0, 0);
 }
-.envelope-icon:hover{
-  color:rgb(19, 223, 223);
+.envelope-icon:hover {
+  color: rgb(19, 223, 223);
 }
 
 /* @use "sass:math";
