@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  background: rgb(44, 102, 179);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.interactive-resume.div > h1 {
+    color: white;
+}
+.interactive-resume.div {
+    max-width: 100px;
+    margin: 50px;
+}
+
+.interactive-resume-btn {
+  background-color: rgba(255, 255, 255, 0);
+  border-width: 1.5px;
+  border-radius: 5px;
+  border-color: white;
+  padding: 7px;
+  font-size: 20px;
+}
+.interactive-resume-link {
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+}
+.interactive-resume-btn:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+.interactive-resume-link:hover {
+  text-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
