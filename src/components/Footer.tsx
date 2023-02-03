@@ -7,12 +7,12 @@ function Footer(): JSX.Element {
   return (
     <div className="footer-container">
       <div className="container__row">
-        <div className="col-1-of-2">
+        <div className="about-container">
           <h1>About</h1>
-          <img src="" alt="" />
+          <img src="#" alt="" />
           <p>Alessia Borys is a junior full-stack software developer.</p>
         </div>
-        <div className="col-1-of-2">
+        <div className="contact-container">
           <h1>Contact</h1>
           <p>
             If you have any questions about anything, or just want to say hi,
