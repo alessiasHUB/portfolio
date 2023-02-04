@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
 import "./landingPage.css";
@@ -29,15 +29,15 @@ export default function LandingPage(): JSX.Element {
               interactive game style website
             </p>
             <button className="interactive-resume-btn">
-              <Link
+              {/* <Link
                 className="interactive-resume-link"
                 to="/interactive-resume"
-              >
-                {" "}
+              > */}
                 LAUNCH
                 {/* <img className="interactive-resume-link" src={launch} alt="" /> */}
-              </Link>
+              {/* </Link> */}
             </button>
+            <p className="coming-soon-txt">coming soon!</p>
           </div>
         </div>
         <Footer />

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faFaceSmile } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./footer.css";
 import contact from "../imgs/txts/contact.png";
@@ -13,7 +13,6 @@ function Footer(): JSX.Element {
         <div className="about-container">
           <img src={about} alt="" />
           <div className="about-section">
-            {/* <FontAwesomeIcon icon={faFaceSmile} className="portrait-pic" /> */}
             <img className="portrait-pic" src={profilePic} alt="" />
             <p>Alessia Borys is a junior full-stack software developer.</p>
           </div>
