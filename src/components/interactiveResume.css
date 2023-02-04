@@ -1,0 +1,12 @@
+/*-----blinking txt-----*/
+.instruction-txt{
+    color:white;
+    font-size: 20px;
+    animation: blinker 1.2s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
