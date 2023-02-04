@@ -96,7 +96,7 @@ export const projects: Project[] = [
       "Full stack",
       "Postman",
       "Beekeeper",
-      "Adobe Illustrator"
+      "Adobe Illustrator",
     ],
     gitHubFrontEnd: "https://github.com/syndercres/dog-breeds-front-end",
     gitHubBackEnd: "https://github.com/syndercres/dog-voting-back-end",
@@ -143,9 +143,10 @@ export const projects: Project[] = [
       "Full stack",
       "Postman",
       "Beekeeper",
-      "Adobe Illustrator"
+      "Adobe Illustrator",
     ],
-    gitHubFrontEnd: "https://github.com/alessiasHUB/study-resource-catalog-front",
+    gitHubFrontEnd:
+      "https://github.com/alessiasHUB/study-resource-catalog-front",
     gitHubBackEnd: "https://github.com/alessiasHUB/study-resource-catalog-back",
     netlify: "https://study-resource-catalog.netlify.app/",
   },

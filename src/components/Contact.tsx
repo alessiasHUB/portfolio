@@ -8,7 +8,7 @@ const Contact: React.FunctionComponent<IContactProps> = (props) => {
   return (
     <div className="content">
       <div className="container-contact">
-      <h2 className="mb-3">Contact Me</h2>
+        <h2 className="mb-3">Contact Me</h2>
         {/* <ContactForm /> */}
       </div>
     </div>

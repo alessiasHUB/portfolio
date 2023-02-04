@@ -1,24 +1,17 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./components/Home";
-import PageFooter from "./components/PageFooter";
-import Navbar from "./components/Navbar";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import InteractiveResume from "./components/InteractiveResume";
+import LandingPage from "./components/LandingPage";
+import "./app.css";
 
 export default function App(): JSX.Element {
   return (
     <>
       <Router>
-        <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/interactive-resume" element={<InteractiveResume />} />
         </Routes>
       </Router>
-      <PageFooter />
     </>
   );
 }

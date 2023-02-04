@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  background: rgb(44, 102, 179);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/*----makes the header go over the foote----*/
+.interactive-res-n-footer {
+  position: relative;
+  height: 100%;
+}
+
+/*-----interactive resume section----*/
+.interactive-resume-div {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: 600px;
+  height: 600px;
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  /* justify-content: center; */
+}
+/* image */
+.interactive-resume-background {
+  object-fit: cover;
+  height: 100%;
+  width: auto;
+}
+/* text area */
+.coming-soon-txt{
+  font-size: 20px;
+  color: rgb(255, 200, 0);
+  text-shadow: 0 0 3px #2d2586, 0 0 5px #0f3c8a;
+}
+.interactive-resume-txt-div {
+  position: absolute;
+  top: 30%;
+  left: calc(100% / 3 - 80px);
+  color: white;
+  font-size: 16px;
+  width: 300px;
+  z-index: 1;
+}
+/* @media only screen and (max-width: 1000px) {
+  .interactive-resume-txt-div {
+    left: calc(5%);
+  }
+}
+@media only screen and (min-width: 1001px) {
+  .interactive-resume-txt-div {
+    left: calc(30%);
+  }
+} */
+.interactive-resume-title {
+  margin: 20px 0px 0px 0px;
+  height: 25px;
+}
+.interactive-resume-btn {
+  background-color: rgba(255, 255, 255, 0);
+  border-width: 1.5px;
+  border-radius: 5px;
+  border-color: white;
+  color:white;
+  padding: 6px;
+  font-size: 18px;
+}
+.interactive-resume-link {
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+}
+.interactive-resume-btn:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+.interactive-resume-link:hover {
+  text-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+/* .interactive-resume-link>img {
+  height: 17px;
+} */

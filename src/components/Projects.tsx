@@ -14,18 +14,27 @@ const Projects: React.FunctionComponent<IProjectsProps> = (props) => {
           {project.description}
           {project.descLink && <a href={project.descLink}>here</a>}
         </p>
-        <br/>
-        <a className="netlify-link" href={project.netlify}>Netlify</a>
+        <br />
+        <a className="netlify-link" href={project.netlify}>
+          Netlify
+        </a>
         <span> </span>
         {project.gitHubBackEnd ? (
           <>
-            <a className="github-link" href={project.gitHubFrontEnd}>GitHub front-end</a>
-            <a className="github-link" href={project.gitHubBackEnd}>GitHub back-end</a>
-            </>
+            <a className="github-link" href={project.gitHubFrontEnd}>
+              GitHub front-end
+            </a>
+            <a className="github-link" href={project.gitHubBackEnd}>
+              GitHub back-end
+            </a>
+          </>
         ) : (
-          <a className="github-link" href={project.gitHubFrontEnd}>GitHub</a>
+          <a className="github-link" href={project.gitHubFrontEnd}>
+            GitHub
+          </a>
         )}
-        <br/><br/>
+        <br />
+        <br />
         <p>
           {project.skills.map((skill, index) => {
             return (
@@ -43,8 +52,9 @@ const Projects: React.FunctionComponent<IProjectsProps> = (props) => {
     <div className="content">
       <h2 className="sub-title">My projects</h2>
       {projectList}
-      <br/>
-      <br/><br/>
+      <br />
+      <br />
+      <br />
     </div>
   );
 };
