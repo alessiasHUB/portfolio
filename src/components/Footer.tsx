@@ -4,7 +4,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./footer.css";
 import contact from "../imgs/txts/contact.png";
 import about from "../imgs/txts/about.png";
-import profilePic from "../imgs/profilePic.png"
+import profilePic from "../imgs/profilePic.png";
 
 function Footer(): JSX.Element {
   return (

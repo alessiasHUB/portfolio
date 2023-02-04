@@ -32,7 +32,9 @@ export default function LandingPage(): JSX.Element {
               <Link
                 className="interactive-resume-link"
                 to="/interactive-resume"
-              > LAUNCH
+              >
+                {" "}
+                LAUNCH
                 {/* <img className="interactive-resume-link" src={launch} alt="" /> */}
               </Link>
             </button>
