@@ -33,8 +33,8 @@ export default function LandingPage(): JSX.Element {
                 className="interactive-resume-link"
                 to="/interactive-resume"
               > */}
-                LAUNCH
-                {/* <img className="interactive-resume-link" src={launch} alt="" /> */}
+              LAUNCH
+              {/* <img className="interactive-resume-link" src={launch} alt="" /> */}
               {/* </Link> */}
             </button>
             <p className="coming-soon-txt">coming soon!</p>

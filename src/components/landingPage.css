@@ -30,7 +30,7 @@ body {
   width: auto;
 }
 /* text area */
-.coming-soon-txt{
+.coming-soon-txt {
   font-size: 20px;
   color: rgb(255, 200, 0);
   text-shadow: 0 0 3px #2d2586, 0 0 5px #0f3c8a;
@@ -63,7 +63,7 @@ body {
   border-width: 1.5px;
   border-radius: 5px;
   border-color: white;
-  color:white;
+  color: white;
   padding: 6px;
   font-size: 18px;
 }
