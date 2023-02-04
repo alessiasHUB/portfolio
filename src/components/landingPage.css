@@ -4,13 +4,14 @@ body {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.interactive-resume-div {
+  /* background-image:url("interactiveresumeImg.svg"); */
+  max-width: 100px;
+  margin: 50px;
+}
 .interactive-resume-title {
     margin: 20px 0px 10px 10px;
     height:30px;
-}
-.interactive-resume.div {
-    max-width: 100px;
-    margin: 50px;
 }
 
 .interactive-resume-btn {

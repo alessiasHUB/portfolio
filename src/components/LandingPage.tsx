@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import "./landingPage.css";
 import interactresText from "../imgs/interactiveresumetxt.png"
+// import interactresImg from "../imgs/´interactiveresumeImg.svg"
 
 export default function LandingPage(): JSX.Element {
   return (
@@ -10,6 +11,7 @@ export default function LandingPage(): JSX.Element {
       <Header />
       <div className="interactive-resume-div">
       <img className="interactive-resume-title" src={interactresText} alt="txt"/>
+        {/* <img src={interactresImg} alt="" /> */}
         <p>
           Let's go over my resume, but make it a little more fun with this
           interactive game style website
