@@ -42,8 +42,8 @@ export default function InteractiveResume(): JSX.Element {
           </p>
         )}
         <Link className="back-to-home-btn" to="/">
-        <FontAwesomeIcon icon={faHouse} />
-      </Link>
+          <FontAwesomeIcon icon={faHouse} />
+        </Link>
       </div>
       <p>interactive resume of</p> {/* change to image */}
       <p>Alessia Borys</p> {/* change to images */}
