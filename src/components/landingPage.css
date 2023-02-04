@@ -5,13 +5,17 @@ body {
 }
 
 .interactive-resume-div {
-  /* background-image:url("interactiveresumeImg.svg"); */
-  max-width: 100px;
-  margin: 50px;
+  /* background-image: url("imgs/interactiveresumeImg.png"); */
+  height: 600px;
+  margin: 0px 0px 100px 0px;
 }
+.interactive-resume-background {
+  height:100%;
+}
+.interactive-resume-txt-div{}
 .interactive-resume-title {
-    margin: 20px 0px 10px 10px;
-    height:30px;
+  margin: 20px 0px 10px 10px;
+  height:30px;
 }
 
 .interactive-resume-btn {

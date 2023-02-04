@@ -2,8 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faFaceSmile } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./footer.css";
-import contact from "../imgs/contact.png"
-import about from "../imgs/about.png"
+import contact from "../imgs/txts/contact.png"
+import about from "../imgs/txts/about.png"
 
 function Footer(): JSX.Element {
   return (
