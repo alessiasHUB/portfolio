@@ -4,6 +4,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./footer.css";
 import contact from "../imgs/txts/contact.png";
 import about from "../imgs/txts/about.png";
+import profilePic from "../imgs/profilePic.png"
 
 function Footer(): JSX.Element {
   return (
@@ -12,8 +13,8 @@ function Footer(): JSX.Element {
         <div className="about-container">
           <img src={about} alt="" />
           <div className="about-section">
-            <FontAwesomeIcon icon={faFaceSmile} className="portrait-pic" />
-            {/* <img src="#" alt="" /> */}
+            {/* <FontAwesomeIcon icon={faFaceSmile} className="portrait-pic" /> */}
+            <img className="portrait-pic" src={profilePic} alt="" />
             <p>Alessia Borys is a junior full-stack software developer.</p>
           </div>
         </div>

@@ -3,8 +3,9 @@ import Footer from "./Footer";
 import Header from "./Header";
 import "./landingPage.css";
 import interactresText from "../imgs/txts/interactiveresumetxt.png";
-// import interactresImg from "../imgs/interactiveresumeImg.png";
-import interactresImgCrop from "../imgs/interactiveresumeImgCropped.png";
+import interactResImg from "../imgs/interactiveResImg.png";
+// import launch from "../imgs/txts/launch.png"
+// import interactresImgCrop from "../imgs/interactiveresumeImgCropped.png";
 
 export default function LandingPage(): JSX.Element {
   return (
@@ -14,7 +15,7 @@ export default function LandingPage(): JSX.Element {
         <div className="interactive-resume-div">
           <img
             className="interactive-resume-background"
-            src={interactresImgCrop}
+            src={interactResImg}
             alt=""
           />
           <div className="interactive-resume-txt-div">
@@ -31,8 +32,8 @@ export default function LandingPage(): JSX.Element {
               <Link
                 className="interactive-resume-link"
                 to="/interactive-resume"
-              >
-                LAUNCH
+              > LAUNCH
+                {/* <img className="interactive-resume-link" src={launch} alt="" /> */}
               </Link>
             </button>
           </div>

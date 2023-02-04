@@ -57,8 +57,8 @@ body {
   border-width: 1.5px;
   border-radius: 5px;
   border-color: white;
-  padding: 7px;
-  font-size: 20px;
+  padding: 6px;
+  font-size: 18px;
 }
 .interactive-resume-link {
   text-decoration: none;
@@ -71,3 +71,6 @@ body {
 .interactive-resume-link:hover {
   text-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
+/* .interactive-resume-link>img {
+  height: 17px;
+} */
