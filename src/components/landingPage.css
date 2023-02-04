@@ -1,23 +1,57 @@
 body {
   margin: 0;
   background: rgb(44, 102, 179);
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.interactive-res-n-footer{
+  position: relative;
+  height: 100%;
 }
 
 .interactive-resume-div {
-  /* background-image: url("imgs/interactiveresumeImg.png"); */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* bottom: 3000px; */
+  max-height: 600px;
   height: 600px;
-  margin: 0px 0px 100px 0px;
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  /* z-index:1; */
 }
 .interactive-resume-background {
-  height:100%;
+  object-fit: cover;
+  height: 100%;
+  width: auto;
 }
-.interactive-resume-txt-div{}
-.interactive-resume-title {
-  margin: 20px 0px 10px 10px;
-  height:30px;
+.interactive-resume-txt-div {
+  position: absolute;
+  top: 30%;
+  left: calc(100% / 3 - 80px);
+  color: white;
+  font-size: 16px;
+  width: 300px;
+  z-index: 1;
 }
+/* @media only screen and (max-width: 1000px) {
+  .interactive-resume-txt-div {
+    left: calc(5%);
+  }
+}
+@media only screen and (min-width: 1001px) {
+  .interactive-resume-txt-div {
+    left: calc(30%);
+  }
+} */
 
+.interactive-resume-title {
+  margin: 20px 0px 0px 0px;
+  height: 25px;
+}
 .interactive-resume-btn {
   background-color: rgba(255, 255, 255, 0);
   border-width: 1.5px;

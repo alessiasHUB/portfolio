@@ -2,17 +2,27 @@ import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
 import "./landingPage.css";
-import interactresText from "../imgs/txts/interactiveresumetxt.png"
-import interactresImg from "../imgs/interactiveresumeImg.png"
+import interactresText from "../imgs/txts/interactiveresumetxt.png";
+// import interactresImg from "../imgs/interactiveresumeImg.png";
+import interactresImgCrop from "../imgs/interactiveresumeImgCropped.png";
 
 export default function LandingPage(): JSX.Element {
   return (
     <>
       <Header />
+      <div className="interactive-res-n-footer">
       <div className="interactive-resume-div">
-        <img className="interactive-resume-background" src={interactresImg} alt="" />
+        <img
+          className="interactive-resume-background"
+          src={interactresImgCrop}
+          alt=""
+          />
         <div className="interactive-resume-txt-div">
-          <img className="interactive-resume-title" src={interactresText} alt="txt"/>
+          <img
+            className="interactive-resume-title"
+            src={interactresText}
+            alt="txt"
+            />
           <p>
             Let's go over my resume, but make it a little more fun with this
             interactive game style website
@@ -25,6 +35,7 @@ export default function LandingPage(): JSX.Element {
         </div>
       </div>
       <Footer />
+            </div>
     </>
   );
 }

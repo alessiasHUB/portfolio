@@ -2,35 +2,35 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./header.css";
-import A from "../imgs/letters/A-white.png"
-import L from "../imgs/letters/L-white.png"
-import E from "../imgs/letters/E-white.png"
-import S from "../imgs/letters/S-white.png"
-import i from "../imgs/letters/i-white.png"
-import B from "../imgs/letters/B-white.png"
-import O from "../imgs/letters/O-white.png"
-import R from "../imgs/letters/R-white.png"
-import Y from "../imgs/letters/Y-white.png"
+import A from "../imgs/letters/A-white.png";
+import L from "../imgs/letters/L-white.png";
+import E from "../imgs/letters/E-white.png";
+import S from "../imgs/letters/S-white.png";
+import i from "../imgs/letters/i-white.png";
+import B from "../imgs/letters/B-white.png";
+import O from "../imgs/letters/O-white.png";
+import R from "../imgs/letters/R-white.png";
+import Y from "../imgs/letters/Y-white.png";
 
 function Header(): JSX.Element {
-  const letterHeight = 30
+  const letterHeight = 30;
 
   return (
     <header className="header">
       <div className="title-container">
-        <img src={A} alt="A" height={letterHeight} className="header-title"/>
-        <img src={L} alt="L" height={letterHeight} className="header-title"/>
-        <img src={E} alt="E" height={letterHeight} className="header-title"/>
-        <img src={S} alt="S" height={letterHeight} className="header-title"/>
-        <img src={S} alt="S" height={letterHeight} className="header-title"/>
-        <img src={i} alt="I" height={letterHeight} className="header-title"/>
-        <img src={A} alt="A" height={letterHeight} className="header-title"/>
+        <img src={A} alt="A" height={letterHeight} className="header-title" />
+        <img src={L} alt="L" height={letterHeight} className="header-title" />
+        <img src={E} alt="E" height={letterHeight} className="header-title" />
+        <img src={S} alt="S" height={letterHeight} className="header-title" />
+        <img src={S} alt="S" height={letterHeight} className="header-title" />
+        <img src={i} alt="I" height={letterHeight} className="header-title" />
+        <img src={A} alt="A" height={letterHeight} className="header-title" />
         <p className="empty-space"> </p>
-        <img src={B} alt="B" height={letterHeight} className="header-title"/>
-        <img src={O} alt="O" height={letterHeight} className="header-title"/>
-        <img src={R} alt="R" height={letterHeight} className="header-title"/>
-        <img src={Y} alt="Y" height={letterHeight} className="header-title"/>
-        <img src={S} alt="S" height={letterHeight} className="header-title"/>
+        <img src={B} alt="B" height={letterHeight} className="header-title" />
+        <img src={O} alt="O" height={letterHeight} className="header-title" />
+        <img src={R} alt="R" height={letterHeight} className="header-title" />
+        <img src={Y} alt="Y" height={letterHeight} className="header-title" />
+        <img src={S} alt="S" height={letterHeight} className="header-title" />
         {/* <p className="header-title">A</p>
         <p className="header-title">L</p>
         <p className="header-title">E</p>
