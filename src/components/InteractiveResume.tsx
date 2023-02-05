@@ -13,13 +13,13 @@ import swim2 from "../imgs/interactivePage/swim2.png";
 import swim3 from "../imgs/interactivePage/swim3.png";
 import useInterval from "./useInterval";
 
-// link to one page links, scroll
+// todo? link to one page links, scroll
 // https://medium.com/geekculture/scrollable-single-page-site-navigation-with-react-custom-hooks-4e7af716f6b1
 
 export default function InteractiveResume(): JSX.Element {
   const [gameStart, setGameStart] = useState<boolean>();
   const [playerImg, setPlayerImg] = useState(above);
-  const [delay, setDelay] = useState<number | null>(null);
+  // const [delay, setDelay] = useState<number | null>(null);
 
   //--------------------------------------------------------handles down-key press or mouse scroll
   const handleKeyDown = (event: KeyboardEvent) => {
@@ -41,6 +41,11 @@ export default function InteractiveResume(): JSX.Element {
   }, []);
 
   //--------------------------------------------------------tracks where the viewer is on the page
+  // todo: figure out the swimming feature (gif?)
+  // todo: figure out the in motion tracking (
+    // setLastScrollY --> delay and compare window.scrollY with lastScrollY
+    // if they are the same ==> swim1 )
+  
   
   // useInterval(() => {
   //   setPlayerImg(prevImg => prevImg === swim2 ? swim3 : swim2);
@@ -84,18 +89,26 @@ export default function InteractiveResume(): JSX.Element {
       <div className="start-container">
         <div className="center-img"></div>
         <p className="interact-title-1">interactive resume of</p>{" "}
-        {/* change to image */}
+        {/* todo: change to image */}
         <p className="interact-title-2">Alessia Borys</p>{" "}
-        {/* change to images */}
+        {/* todo: change to images */}
         {!gameStart && (
           <p className="instruction-txt">
             Press keyboard's down-arrow or scroll mouse
           </p>
         )}
+        {/*👇 todo: figure out the resizing on that */}
         <Link className="back-to-home-btn" to="/">
           <FontAwesomeIcon icon={faHouse} />
         </Link>
       </div>
+      {/*👇 todo: make these into separate pages */}
+      <div className="inter-res-skills"></div>
+      <div className="inter-res-hobbies"></div>
+      <div className="inter-res-projects"></div>
+      <div className="inter-res-education"></div>
+      <div className="inter-res-experience"></div>
+      <div className="inter-res-contact"></div>
       <div>
         <h1>-</h1>
         <h1>-</h1>
