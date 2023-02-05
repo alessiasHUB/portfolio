@@ -83,15 +83,15 @@ export default function InteractiveResume(): JSX.Element {
       <img className="player" src={playerImg} alt="" />
       <div className="start-container">
         <div className="center-img"></div>
+        <p className="interact-title-1">interactive resume of</p>{" "}
+        {/* change to image */}
+        <p className="interact-title-2">Alessia Borys</p>{" "}
+        {/* change to images */}
         {!gameStart && (
           <p className="instruction-txt">
             Press keyboard's down-arrow or scroll mouse
           </p>
         )}
-        <p className="interact-title-1">interactive resume of</p>{" "}
-        {/* change to image */}
-        <p className="interact-title-2">Alessia Borys</p>{" "}
-        {/* change to images */}
         <Link className="back-to-home-btn" to="/">
           <FontAwesomeIcon icon={faHouse} />
         </Link>

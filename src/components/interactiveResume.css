@@ -34,8 +34,10 @@
 /*-----blinking txt-----*/
 .instruction-txt {
   z-index: 1;
+  text-align: center;
+  margin-top: 340px;
   color: white;
-  font-size: 20px;
+  font-size: 24px;
   animation: blinker 1.2s linear infinite;
 }
 @keyframes blinker {
