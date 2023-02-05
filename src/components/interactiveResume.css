@@ -69,7 +69,8 @@
   top: 66%;
   left: 42.5%;
   transform: translate(-50%, -50%);
-  height: 300px;
+  /* height: 400px; */
+  width:120px;
 }
 
 /*-----start background img-----*/
