@@ -33,30 +33,54 @@
 
 /*-----blinking txt-----*/
 .instruction-txt {
+  z-index: 1;
   color: white;
   font-size: 20px;
   animation: blinker 1.2s linear infinite;
 }
-
 @keyframes blinker {
   50% {
     opacity: 0;
   }
 }
 
-/*-----start img-----*/
-.container {
-  width: 100%;
-  height: 600px;
+/*-----intro-----*/
+.interact-title-1 {
+  z-index: 1;
+  position: absolute;
+  color: white;
+  font-size: 22px;
+}
+.interact-title-2 {
+  z-index: 1;
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  margin-top: 44px;
+}
 
-  /* this messes up the header */
-  /* overflow: hidden;  */
+/*-----player-----*/
+.player {
+  z-index: 1;
+  position: fixed;
+  /* calculate this position so it is always on the boat */
+  top: 66%;
+  left: 42.5%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+}
+
+/*-----start background img-----*/
+.start-container {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
   position: relative;
 }
 
 .center-img {
-  /* need edited img*/
-  background: url(../imgs/interactiveResImg.png) no-repeat center center;
+  background: url(../imgs/interactivePage/interactiveRes1.png) no-repeat center
+    center;
   background-size: cover;
   width: 100%;
   height: 100%;

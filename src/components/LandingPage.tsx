@@ -3,7 +3,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import "./landingPage.css";
 import interactresText from "../imgs/txts/interactiveresumetxt.png";
-import interactResImg from "../imgs/interactiveResImg.png";
+import interactResImg from "../imgs/landingPage/landingPage-interactiveRes.png";
 // import launch from "../imgs/txts/launch.png"
 // import interactresImgCrop from "../imgs/interactiveresumeImgCropped.png";
 
