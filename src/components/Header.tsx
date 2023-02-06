@@ -46,10 +46,10 @@ function Header(): JSX.Element {
         <p className="header-title">S</p> */}
       </div>
       <div className="links-header">
-        <a href="https://github.com/alessiasHUB/">
+        <a href="https://www.linkedin.com/in/alessiaborys/">
           <FontAwesomeIcon icon={faLinkedin} className="linkedin-icon-header" />
         </a>
-        <a href="https://www.linkedin.com/in/alessiaborys/">
+        <a href="https://github.com/alessiasHUB/">
           <FontAwesomeIcon icon={faGithub} className="github-icon-header" />
         </a>
         {/* <a href="https://www.codewars.com/alessiasHUB/">

@@ -87,7 +87,6 @@ export default function InteractiveResume(): JSX.Element {
           <FontAwesomeIcon icon={faHouse} />
         </Link>
       </div>
-      {/*👇 todo: make these into separate pages */}
       <div className="inter-res-skills">
         <InterResSkills />
       </div>
