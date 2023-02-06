@@ -4,11 +4,8 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./interactiveResume.css";
 
-/*  todo: the imgs need to be sized properly in illustrator,
-    - and the gif needs to match to the still imgs, 
-    - make the swim one shorter
-    link to gifMaker: https://ezgif.com/maker/ 
-*/
+/*  link to gifMaker: https://ezgif.com/maker/   */
+import boat from "../imgs/interactivePage/boat.png"
 import above from "../imgs/interactivePage/player/playerDefaultAbove.png";
 import underWater1 from "../imgs/interactivePage/player/playerUnder1.png";
 import swim1 from "../imgs/interactivePage/player/playerDefaultSwim.png";
@@ -66,6 +63,7 @@ export default function InteractiveResume(): JSX.Element {
   return (
     <div className="interactive-resume-page">
       <img className="player" src={playerImg} alt="" />
+      <img className="boat" src={boat} alt="" />
       <div className="start-container">
         <div className="center-img"></div>
         <p className="interact-title-1">interactive resume of</p>{" "}
