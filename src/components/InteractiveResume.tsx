@@ -4,14 +4,15 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./interactiveResume.css";
 
-/*  todo: the imgs need to be sized properly in illustrator 
-    and the gif needs to match 
+/*  todo: the imgs need to be sized properly in illustrator,
+    - and the gif needs to match to the still imgs, 
+    - make the swim one shorter
     link to gifMaker: https://ezgif.com/maker/ 
 */
 import above from "../imgs/interactivePage/PlayerDefaultAbove.png";
 import underWater1 from "../imgs/interactivePage/underWater1.png";
 import swim1 from "../imgs/interactivePage/PlayerSwim1.png";
-import swimGif from "../imgs/interactivePage/swimGif.gif"
+import swimGif from "../imgs/interactivePage/swimGif.gif";
 import useInterval from "./useInterval";
 
 // todo? link to one page links, scroll
@@ -54,7 +55,7 @@ export default function InteractiveResume(): JSX.Element {
     if (window.scrollY >= 1000) {
       setPlayerImg(swimGif);
       setYpos(window.scrollY);
-      setDelay(1000)
+      setDelay(1000);
     } else if (window.scrollY >= 350) {
       setPlayerImg(underWater1);
     } else if (window.scrollY <= 1000) {
