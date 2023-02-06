@@ -5,13 +5,17 @@ import { Link } from "react-router-dom";
 import "./interactiveResume.css";
 
 /*  link to gifMaker: https://ezgif.com/maker/   */
-/* todo: add bubbles to the gifs */
+/* todo: add BUBBLES to the gifs and BLINKING EYES */
+//--------------------------------------------------------img imports
 import boat from "../imgs/interactivePage/boat.png";
 import above from "../imgs/interactivePage/player/playerDefaultAbove.png";
 import underWater1 from "../imgs/interactivePage/player/playerUnder1.png";
 import swim1 from "../imgs/interactivePage/player/playerDefaultSwim.png";
-import swimGif from "../imgs/interactivePage/player/playerSwimGifWithFade.gif";
+import swimGif from "../imgs/interactivePage/player/playerSwimResizeGifWithFade.gif";
 import useInterval from "./useInterval";
+
+//--------------------------------------------------------section page imports
+import InterResSkills from "./InterResSkills";
 
 // todo? link to one page links, scroll
 // https://medium.com/geekculture/scrollable-single-page-site-navigation-with-react-custom-hooks-4e7af716f6b1
@@ -49,6 +53,8 @@ export default function InteractiveResume(): JSX.Element {
     }
   }, delay);
 
+  // todo: add transition imgs when player starts swimming
+  // todo: move swimmer higher up on page
   window.addEventListener("scroll", function () {
     if (window.scrollY >= 1000) {
       setPlayerImg(swimGif);
@@ -82,7 +88,9 @@ export default function InteractiveResume(): JSX.Element {
         </Link>
       </div>
       {/*👇 todo: make these into separate pages */}
-      <div className="inter-res-skills"></div>
+      <div className="inter-res-skills">
+        <InterResSkills />
+      </div>
       <div className="inter-res-hobbies"></div>
       <div className="inter-res-projects"></div>
       <div className="inter-res-education"></div>
