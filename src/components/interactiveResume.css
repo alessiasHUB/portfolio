@@ -33,6 +33,8 @@
 
 /*-----blinking txt-----*/
 .instruction-txt {
+  user-select: none;
+  -webkit-user-drag: none;
   z-index: 1;
   text-align: center;
   margin-top: 340px;
@@ -63,6 +65,8 @@
 
 /*-----player-----*/
 .player {
+  user-select: none;
+  -webkit-user-drag: none;
   z-index: 2;
   position: fixed;
   top: calc(50% - 70px);
@@ -72,6 +76,8 @@
 }
 /*-----boat-----*/
 .boat {
+  user-select: none;
+  -webkit-user-drag: none;
   z-index: 1;
   position: absolute;
   top: calc(50% + 130px);
@@ -79,38 +85,44 @@
   /* transform: translate(-50%, -50%); */
   height: 180px;
 }
-
-/* .boat:hover {
-  animation: wobble 0.3s ease-in-out alternate infinite;
-}
-@keyframes wobble {
-  0% {
-    transform: translate(-5px, 0);
-  }
-  100% {
-    transform: translate(5px, 0);
-  }
-} */
-
 .boat:hover {
   animation: tiltShake 2s ease-in-out alternate infinite;
 }
-
 @keyframes tiltShake {
-  0% {transform: rotate(1deg);}
-  10% {transform: rotate(0deg);}
-  10% {transform: rotate(-1deg);}
-  30% {transform: rotate(0deg);}
-  40% {transform: rotate(1deg);}
-  50% {transform: rotate(-1deg);}
-  60% {transform: rotate(0deg);}
-  70% {transform: rotate(1deg);}
-  80% {transform: rotate(0deg);}
-  90% {transform: rotate(-1deg);}
-  100% {transform: rotate(0deg);}
+  0% {
+    transform: rotate(1deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-1deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(1deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
-
-
 
 /* styles for screens larger than 500px */
 /*  http://howbigismybrowser.com/  */
@@ -125,7 +137,6 @@
   }
 }
 
-
 /*-----start background img-----*/
 .start-container {
   width: 100%;
@@ -135,8 +146,9 @@
 }
 
 .center-img {
-  background: url(../imgs/interactivePage/interactiveRes1.png) no-repeat center
-    center;
+  user-select: none;
+  -webkit-user-drag: none;
+  background: url(../imgs/interactivePage/startImg.png) no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 100%;

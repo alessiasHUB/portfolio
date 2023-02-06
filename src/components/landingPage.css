@@ -25,6 +25,10 @@ body {
 }
 /* image */
 .interactive-resume-background {
+  user-select: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-drag: none;
   object-fit: cover;
   height: 100%;
   width: auto;
@@ -54,6 +58,8 @@ body {
   }
 } */
 .interactive-resume-title {
+  user-select: none;
+  -webkit-user-drag: none;
   margin: 20px 0px 0px 0px;
   height: 25px;
 }

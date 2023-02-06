@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import "./interactiveResume.css";
 
 /*  link to gifMaker: https://ezgif.com/maker/   */
-import boat from "../imgs/interactivePage/boat.png"
+/* todo: add bubbles to the gifs */
+import boat from "../imgs/interactivePage/boat.png";
 import above from "../imgs/interactivePage/player/playerDefaultAbove.png";
 import underWater1 from "../imgs/interactivePage/player/playerUnder1.png";
 import swim1 from "../imgs/interactivePage/player/playerDefaultSwim.png";
@@ -52,7 +53,7 @@ export default function InteractiveResume(): JSX.Element {
     if (window.scrollY >= 1000) {
       setPlayerImg(swimGif);
       setYpos(window.scrollY);
-      setDelay(55*18); // 55 is the gif-switch-time
+      setDelay(55 * 18); // 55 is the gif-switch-time
     } else if (window.scrollY >= 350) {
       setPlayerImg(underWater1);
     } else if (window.scrollY <= 1000) {
