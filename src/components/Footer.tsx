@@ -25,10 +25,10 @@ function Footer(): JSX.Element {
             below:
           </p>
           <div className="links">
-            <a href="https://github.com/alessiasHUB/">
+            <a href="https://www.linkedin.com/in/alessiaborys/">
               <FontAwesomeIcon icon={faLinkedin} className="linkedin-icon" />
             </a>
-            <a href="https://www.linkedin.com/in/alessiaborys/">
+            <a href="https://github.com/alessiasHUB/">
               <FontAwesomeIcon icon={faGithub} className="github-icon" />
             </a>
             {/* <a href="https://www.codewars.com/alessiasHUB/">
