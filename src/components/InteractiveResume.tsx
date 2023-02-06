@@ -9,10 +9,10 @@ import "./interactiveResume.css";
     - make the swim one shorter
     link to gifMaker: https://ezgif.com/maker/ 
 */
-import above from "../imgs/interactivePage/PlayerDefaultAbove.png";
-import underWater1 from "../imgs/interactivePage/underWater1.png";
-import swim1 from "../imgs/interactivePage/PlayerSwim1.png";
-import swimGif from "../imgs/interactivePage/swimGif.gif";
+import above from "../imgs/interactivePage/player/playerDefaultAbove.png";
+import underWater1 from "../imgs/interactivePage/player/playerUnder1.png";
+import swim1 from "../imgs/interactivePage/player/playerDefaultSwim.png";
+import swimGif from "../imgs/interactivePage/player/playerSwimGifWithFade.gif";
 import useInterval from "./useInterval";
 
 // todo? link to one page links, scroll
@@ -55,7 +55,7 @@ export default function InteractiveResume(): JSX.Element {
     if (window.scrollY >= 1000) {
       setPlayerImg(swimGif);
       setYpos(window.scrollY);
-      setDelay(1000);
+      setDelay(55*18); // 55 is the gif-switch-time
     } else if (window.scrollY >= 350) {
       setPlayerImg(underWater1);
     } else if (window.scrollY <= 1000) {
