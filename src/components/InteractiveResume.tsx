@@ -11,6 +11,8 @@ import underWater1 from "../imgs/interactivePage/underWater1.png";
 // import underWater2 from "../imgs/interactivePage/underWater2.png";
 // import swim1 from "../imgs/interactivePage/swim1.png";
 import swim1 from "../imgs/interactivePage/PlayerSwim1.png";
+import swimGif from "../imgs/interactivePage/swimGif.gif"
+import useInterval from "./useInterval";
 // import swim2 from "../imgs/interactivePage/swim2.png";
 // import swim3 from "../imgs/interactivePage/swim3.png";
 // import useInterval from "./useInterval";
@@ -21,7 +23,8 @@ import swim1 from "../imgs/interactivePage/PlayerSwim1.png";
 export default function InteractiveResume(): JSX.Element {
   const [gameStart, setGameStart] = useState<boolean>();
   const [playerImg, setPlayerImg] = useState(above);
-  // const [delay, setDelay] = useState<number | null>(null);
+  const [Ypos, setYpos] = useState<number>();
+  const [delay, setDelay] = useState<number | null>(null);
 
   //--------------------------------------------------------handles down-key press or mouse scroll
   const handleKeyDown = (event: KeyboardEvent) => {
@@ -43,43 +46,22 @@ export default function InteractiveResume(): JSX.Element {
   }, []);
 
   //--------------------------------------------------------tracks where the viewer is on the page
-  // todo: figure out the swimming feature (gif?)
-  // todo: figure out the in motion tracking (
-  // setLastScrollY --> delay and compare window.scrollY with lastScrollY
-  // if they are the same ==> swim1 )
-
-  // useInterval(() => {
-  //   setPlayerImg(prevImg => prevImg === swim2 ? swim3 : swim2);
-  // }, delay);
-
-  // const swimming = () => {
-  //   const interval: NodeJS.Timeout = setInterval(() => {
-  //     setPlayerImg(prevImg =>
-  //       prevImg === swim2 ? swim3 : swim2
-  //     );
-  //   }, 800);
-  //   return () => clearInterval(interval);
-  // };
-
-  // let cleanup: () => void;
+  //----------------------if scroll stops the img will change
+  useInterval(() => {
+    if (Ypos === window.scrollY) {
+      setPlayerImg(swim1);
+    }
+  }, delay);
 
   window.addEventListener("scroll", function () {
     if (window.scrollY >= 1000) {
-      setPlayerImg(swim1);
-      // setDelay(800)
-      // cleanup = swimming();
+      setPlayerImg(swimGif);
+      setYpos(window.scrollY);
+      setDelay(1000)
     } else if (window.scrollY >= 350) {
       setPlayerImg(underWater1);
-      // setDelay(null)
-      // if (cleanup) {
-      //   cleanup();
-      // }
     } else if (window.scrollY <= 1000) {
       setPlayerImg(above);
-      // setDelay(null)
-      // if (cleanup) {
-      //   cleanup();
-      // }
     }
   });
 
