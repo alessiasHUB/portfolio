@@ -45,14 +45,13 @@ export default function InteractiveResume(): JSX.Element {
   //--------------------------------------------------------tracks where the viewer is on the page
   // todo: figure out the swimming feature (gif?)
   // todo: figure out the in motion tracking (
-    // setLastScrollY --> delay and compare window.scrollY with lastScrollY
-    // if they are the same ==> swim1 )
-  
-  
+  // setLastScrollY --> delay and compare window.scrollY with lastScrollY
+  // if they are the same ==> swim1 )
+
   // useInterval(() => {
   //   setPlayerImg(prevImg => prevImg === swim2 ? swim3 : swim2);
   // }, delay);
-  
+
   // const swimming = () => {
   //   const interval: NodeJS.Timeout = setInterval(() => {
   //     setPlayerImg(prevImg =>
@@ -61,12 +60,12 @@ export default function InteractiveResume(): JSX.Element {
   //   }, 800);
   //   return () => clearInterval(interval);
   // };
-  
+
   // let cleanup: () => void;
-  
+
   window.addEventListener("scroll", function () {
     if (window.scrollY >= 1000) {
-      setPlayerImg(swim1)
+      setPlayerImg(swim1);
       // setDelay(800)
       // cleanup = swimming();
     } else if (window.scrollY >= 350) {
@@ -83,7 +82,6 @@ export default function InteractiveResume(): JSX.Element {
       // }
     }
   });
-  
 
   return (
     <div className="interactive-resume-page">
