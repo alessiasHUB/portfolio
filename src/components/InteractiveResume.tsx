@@ -4,18 +4,15 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./interactiveResume.css";
 
-/* todo: the imgs need to be sized properly in illustrator */
-// import above from "../imgs/interactivePage/above1.png";
+/*  todo: the imgs need to be sized properly in illustrator 
+    and the gif needs to match 
+    link to gifMaker: https://ezgif.com/maker/ 
+*/
 import above from "../imgs/interactivePage/PlayerDefaultAbove.png";
 import underWater1 from "../imgs/interactivePage/underWater1.png";
-// import underWater2 from "../imgs/interactivePage/underWater2.png";
-// import swim1 from "../imgs/interactivePage/swim1.png";
 import swim1 from "../imgs/interactivePage/PlayerSwim1.png";
 import swimGif from "../imgs/interactivePage/swimGif.gif"
 import useInterval from "./useInterval";
-// import swim2 from "../imgs/interactivePage/swim2.png";
-// import swim3 from "../imgs/interactivePage/swim3.png";
-// import useInterval from "./useInterval";
 
 // todo? link to one page links, scroll
 // https://medium.com/geekculture/scrollable-single-page-site-navigation-with-react-custom-hooks-4e7af716f6b1
