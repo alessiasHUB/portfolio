@@ -3,8 +3,9 @@ import "./interResSkills.css";
 import { Waypoint } from "react-waypoint";
 
 //----------------------------------------------image imports
-import whale1 from "../imgs/interactivePage/skillsPage/whale-1.png"
-import whale2 from "../imgs/interactivePage/skillsPage/whale-2.png"
+// import whale1 from "../imgs/interactivePage/skillsPage/whale-1.png"
+// import whale2 from "../imgs/interactivePage/skillsPage/whale-2.png"
+import whales from "../imgs/interactivePage/skillsPage/whales.png"
 
 // const skills: string[] = [
 //   "Javascript",
@@ -42,7 +43,7 @@ function InterResSkills(): JSX.Element {
     <div className="background-img-skills">
       <Waypoint onEnter={() => setAnimationTriggered(true)}>
         <div className={`animated-div ${animationTriggered ? "move-in" : ""}`}>
-          <img
+          {/* <img
             className="skills-whale"
             src={whale1}
             alt=""
@@ -50,6 +51,11 @@ function InterResSkills(): JSX.Element {
           <img
             className="skills-whale"
             src={whale2}
+            alt=""
+          /> */}
+          <img
+            className="skills-whale"
+            src={whales}
             alt=""
           />
         </div>
