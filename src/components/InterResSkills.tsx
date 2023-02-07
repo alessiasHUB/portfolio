@@ -7,21 +7,13 @@ import { Waypoint } from "react-waypoint";
 // import whale2 from "../imgs/interactivePage/skillsPage/whale-2.png"
 import whales from "../imgs/interactivePage/skillsPage/whales.png"
 
-// const skills: string[] = [
-//   "Javascript",
-//   "Typescript",
-//   "React",
-//   "HTML",
-//   "Markdown",
-//   "CSS",
 //   "Node.js",
 //   "Express",
 //   "JEST",
 //   "PostgreSQL",
 //   "Git",
 //   "Adobe",
-// ];
-// const softwares: string[] = [
+// 
 //   "Microsoft Office",
 //   "Microsoft Teams",
 //   "COSMOS",
@@ -32,13 +24,15 @@ import whales from "../imgs/interactivePage/skillsPage/whales.png"
 //   "Visual Studio Code",
 //   "Postman",
 //   "Beekeeper Studio",
-// ];
+
 
 function InterResSkills(): JSX.Element {
   const [animationTriggered, setAnimationTriggered] = React.useState(false);
 
   // todo: change ratio of background imgs
   // todo: make multiple divs + have them come in from different sides
+  // todo: make gifs of the whales swimming
+
   return (
     <div className="background-img-skills">
       <Waypoint onEnter={() => setAnimationTriggered(true)}>
