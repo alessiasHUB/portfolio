@@ -1,10 +1,4 @@
 .interactive-resume-page {
-  /* display:flex;
-    justify-content: center;
-    max-height:7000px; */
-  /* background-image: url("../imgs/interactivePage/background.png"); */
-  /* background-size: calc(max(100%, 1000px)); */
-
   /* https://cssgradient.io/ */
   background: rgb(0, 1, 8);
   background: linear-gradient(
@@ -13,6 +7,8 @@
     rgba(11, 68, 153, 1) 43%,
     rgba(0, 187, 255, 1) 100%
   );
+  /* change the height to fit all sections */
+  height: 5000px;
 }
 
 .background {

@@ -95,7 +95,7 @@ export default function InteractiveResume(): JSX.Element {
       <div className="inter-res-education"></div>
       <div className="inter-res-experience"></div>
       <div className="inter-res-contact"></div>
-      <div>
+      {/* <div>
         <h1>-</h1>
         <h1>-</h1>
         <h1>-</h1>
@@ -291,7 +291,7 @@ export default function InteractiveResume(): JSX.Element {
         <h1>-</h1>
         <h1>-</h1>
         <h1>-</h1>
-      </div>
+      </div> */}
     </div>
   );
 }
