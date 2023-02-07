@@ -1,7 +1,7 @@
 .background-img-skills {
   user-select: none;
   -webkit-user-drag: none;
-  background: url(../imgs/interactivePage/skillsPage/background-skills.png)
+  background: url(../imgs/interactivePage/skillsPage/background-skills-page.png)
     no-repeat center center;
   background-position: center top;
   background-size: 100% 100%;
@@ -12,14 +12,16 @@
   position: absolute;
   z-index: 1;
 
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 /*-----imgs-----*/
-.skills-whale-1 {
+.skills-whale {
+    /* top: 100px; */
   z-index: 2;
+  height: 500px;
 }
 
 .animated-div {
@@ -29,7 +31,7 @@
 }
 
 .move-in {
-  animation: moveInFromRight 1s ease-out;
+  animation: moveInFromRight 2s ease-out;
 }
 
 @keyframes moveInFromRight {
