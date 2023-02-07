@@ -1,7 +1,7 @@
 .background-img-skills {
   user-select: none;
   -webkit-user-drag: none;
-  background: url(../imgs/interactivePage/skillsPage/background-skills-page.png)
+  background: url(../imgs/interactivePage/skillsPage/background-skills.png)
     no-repeat center center;
   background-position: center top;
   background-size: 100% 100%;
@@ -19,9 +19,13 @@
 
 /*-----imgs-----*/
 .skills-whale {
-    /* top: 100px; */
+  /* top: 100px; */
   z-index: 2;
   height: 900px;
+}
+.skills-dolphin{
+    z-index: 2;
+  height:500px;
 }
 
 .animated-div {

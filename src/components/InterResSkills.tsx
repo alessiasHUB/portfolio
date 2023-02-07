@@ -5,7 +5,8 @@ import { Waypoint } from "react-waypoint";
 //----------------------------------------------image imports
 // import whale1 from "../imgs/interactivePage/skillsPage/whale-1.png"
 // import whale2 from "../imgs/interactivePage/skillsPage/whale-2.png"
-import whales from "../imgs/interactivePage/skillsPage/whales.png"
+import whales from "../imgs/interactivePage/skillsPage/whales.png";
+import dolphins from "../imgs/interactivePage/skillsPage/dolphins.png";
 
 //   "Node.js",
 //   "Express",
@@ -13,7 +14,7 @@ import whales from "../imgs/interactivePage/skillsPage/whales.png"
 //   "PostgreSQL",
 //   "Git",
 //   "Adobe",
-// 
+//
 //   "Microsoft Office",
 //   "Microsoft Teams",
 //   "COSMOS",
@@ -25,14 +26,13 @@ import whales from "../imgs/interactivePage/skillsPage/whales.png"
 //   "Postman",
 //   "Beekeeper Studio",
 
-
 function InterResSkills(): JSX.Element {
   const [animationTriggered, setAnimationTriggered] = React.useState(false);
 
-  // todo: change ratio of background imgs
+  // todo: change background imgs, less valleys
   // todo: make multiple divs + have them come in from different sides
   // todo: make gifs of the whales swimming
-
+  // todo: right dolphin looks maaank
   return (
     <div className="background-img-skills">
       <Waypoint onEnter={() => setAnimationTriggered(true)}>
@@ -47,11 +47,8 @@ function InterResSkills(): JSX.Element {
             src={whale2}
             alt=""
           /> */}
-          <img
-            className="skills-whale"
-            src={whales}
-            alt=""
-          />
+          <img className="skills-whale" src={whales} alt="" />
+          <img className="skills-dolphin" src={dolphins} alt="" />
         </div>
       </Waypoint>
 
