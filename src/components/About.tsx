@@ -27,8 +27,8 @@ const DownloadPDF: React.FC = () => {
 };
 
 const introduction = `
-Chemical engineering graduate with experience as a junior full stack software 
-developer, excited to pursue a career in the tech industry. I am a hardworking 
+Junior full stack software developer with a background in Chemical engineering. 
+Excited to pursue a career in the tech industry. I am a hardworking 
 and creative individual who is always eager to learn new things. My previous 
 work experience includes internships in green-hydrogen energy and marketing, 
 as well as roles in sales, private chef and as the owner and manager of my own 

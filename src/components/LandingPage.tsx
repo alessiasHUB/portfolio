@@ -1,9 +1,9 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
 import "./landingPage.css";
 import interactresText from "../imgs/txts/interactiveresumetxt.png";
-import interactResImg from "../imgs/interactiveResImg.png";
+import interactResImg from "../imgs/landingPage/landingPage-interactiveRes.png";
 // import launch from "../imgs/txts/launch.png"
 // import interactresImgCrop from "../imgs/interactiveresumeImgCropped.png";
 
@@ -29,13 +29,13 @@ export default function LandingPage(): JSX.Element {
               interactive game style website
             </p>
             <button className="interactive-resume-btn">
-              {/* <Link
+              <Link
                 className="interactive-resume-link"
                 to="/interactive-resume"
-              > */}
-              LAUNCH
-              {/* <img className="interactive-resume-link" src={launch} alt="" /> */}
-              {/* </Link> */}
+              >
+                LAUNCH
+                {/* <img className="interactive-resume-link" src={launch} alt="" /> */}
+              </Link>
             </button>
             <p className="coming-soon-txt">coming soon!</p>
           </div>
