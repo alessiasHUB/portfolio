@@ -13,7 +13,6 @@ import K from "../imgs/letters/K-white.png";
 import i from "../imgs/letters/i-white.png";
 import L from "../imgs/letters/L-white.png";
 
-
 function InterResSkills(): JSX.Element {
   const [animationTriggered, setAnimationTriggered] = React.useState(false);
 
@@ -32,8 +31,15 @@ function InterResSkills(): JSX.Element {
         <img src={L} alt="L" className="skills-title" />
         <img src={S} alt="S" className="skills-title" />
       </div>
-      <Waypoint topOffset={"-1000px"} onEnter={() => setAnimationTriggered(true)}>
-        <div className={`animated-whales ${animationTriggered ? "move-in-right" : ""}`}>
+      <Waypoint
+        topOffset={"-1000px"}
+        onEnter={() => setAnimationTriggered(true)}
+      >
+        <div
+          className={`animated-whales ${
+            animationTriggered ? "move-in-right" : ""
+          }`}
+        >
           {/* <img
             className="skills-whale"
             src={whale1}
@@ -47,8 +53,15 @@ function InterResSkills(): JSX.Element {
           <img className="skills-whale" src={whales} alt="" />
         </div>
       </Waypoint>
-      <Waypoint topOffset={"-600px"} onEnter={() => setAnimationTriggered(true)}>
-        <div className={`animated-dolphins ${animationTriggered ? "move-in-left" : ""}`}>
+      <Waypoint
+        topOffset={"-600px"}
+        onEnter={() => setAnimationTriggered(true)}
+      >
+        <div
+          className={`animated-dolphins ${
+            animationTriggered ? "move-in-left" : ""
+          }`}
+        >
           <img className="skills-dolphin" src={dolphins} alt="" />
         </div>
       </Waypoint>

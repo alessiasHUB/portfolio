@@ -24,7 +24,7 @@
   align-items: center;
 }
 .skills-title {
-  height:80px;
+  height: 80px;
   color: white;
   font-size: 30px;
   margin: 5px 1px;
@@ -47,33 +47,33 @@
   z-index: 2;
 }
 .move-in-right {
-    animation: moveInFromRight 2s ease-out;
+  animation: moveInFromRight 2s ease-out;
+}
+@keyframes moveInFromRight {
+  0% {
+    transform: translateX(100%);
   }
-  @keyframes moveInFromRight {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .skills-dolphin {
-    left: -100%;
-    z-index: 2;
-    height: 400px;
+  left: -100%;
+  z-index: 2;
+  height: 400px;
 }
-.animated-dolphins{
-    margin-top: 600px;
+.animated-dolphins {
+  margin-top: 600px;
 }
-  .move-in-left {
-      animation: moveInFromLeft 2s ease-out;
-    }
-    @keyframes moveInFromLeft {
-      0% {
-        transform: translateX(-100%);
-      }
-      100% {
-        transform: translateX(0%);
-      }
-    }
+.move-in-left {
+  animation: moveInFromLeft 2s ease-out;
+}
+@keyframes moveInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
