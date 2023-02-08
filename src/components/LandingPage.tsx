@@ -26,7 +26,7 @@ export default function LandingPage(): JSX.Element {
             />
             <p>
               Let's go over my resume, but make it a little more fun with this
-              interactive game style website
+              interactive game
             </p>
             <button className="interactive-resume-btn">
               <Link
@@ -37,7 +37,7 @@ export default function LandingPage(): JSX.Element {
                 {/* <img className="interactive-resume-link" src={launch} alt="" /> */}
               </Link>
             </button>
-            <p className="coming-soon-txt">coming soon!</p>
+            <p className="coming-soon-txt">under construction!</p>
           </div>
         </div>
         <Footer />
