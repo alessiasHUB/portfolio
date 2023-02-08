@@ -16,7 +16,26 @@
   justify-content: center; */
   /* align-items: center; */ /* <-- vertical align */
 }
-
+/*-----title-----*/
+.skills-title-container {
+  margin: 0px 70px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.skills-title {
+  height:80px;
+  color: white;
+  font-size: 30px;
+  margin: 5px 1px;
+  user-select: none;
+  transition: transform 0.2s;
+  font-family: "Erica One", cursive;
+  /* font-family: "Modak", cursive; */
+}
+.skills-title:hover {
+  transform: scale(1.5);
+}
 /*-----imgs-----*/
 .skills-whale {
   z-index: 2;
