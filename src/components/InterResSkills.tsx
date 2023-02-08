@@ -35,8 +35,8 @@ function InterResSkills(): JSX.Element {
   // todo: right dolphin looks maaank
   return (
     <div className="background-img-skills">
-      <Waypoint onEnter={() => setAnimationTriggered(true)}>
-        <div className={`animated-div ${animationTriggered ? "move-in" : ""}`}>
+      <Waypoint topOffset={"-1000px"} onEnter={() => setAnimationTriggered(true)}>
+        <div className={`animated-whales ${animationTriggered ? "move-in-right" : ""}`}>
           {/* <img
             className="skills-whale"
             src={whale1}
@@ -48,10 +48,13 @@ function InterResSkills(): JSX.Element {
             alt=""
           /> */}
           <img className="skills-whale" src={whales} alt="" />
+        </div>
+      </Waypoint>
+      <Waypoint topOffset={"-600px"} onEnter={() => setAnimationTriggered(true)}>
+        <div className={`animated-dolphins ${animationTriggered ? "move-in-left" : ""}`}>
           <img className="skills-dolphin" src={dolphins} alt="" />
         </div>
       </Waypoint>
-
       {/* <div className="about-desc">
         {skills.map((el, index) => {
           return (

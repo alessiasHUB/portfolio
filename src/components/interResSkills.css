@@ -12,37 +12,49 @@
   position: absolute;
   z-index: 1;
 
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   /* align-items: center; */ /* <-- vertical align */
 }
 
 /*-----imgs-----*/
 .skills-whale {
-  /* top: 100px; */
   z-index: 2;
   height: 900px;
 }
-.skills-dolphin {
-  z-index: 2;
-  height: 500px;
-}
-
-.animated-div {
+.animated-whales {
   position: absolute;
   right: 0;
   z-index: 2;
 }
-
-.move-in {
-  animation: moveInFromRight 2s ease-out;
+.move-in-right {
+    animation: moveInFromRight 2s ease-out;
+  }
+  @keyframes moveInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
 }
 
-@keyframes moveInFromRight {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.skills-dolphin {
+    left: -100%;
+    z-index: 2;
+    height: 400px;
 }
+.animated-dolphins{
+    margin-top: 600px;
+}
+  .move-in-left {
+      animation: moveInFromLeft 2s ease-out;
+    }
+    @keyframes moveInFromLeft {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
