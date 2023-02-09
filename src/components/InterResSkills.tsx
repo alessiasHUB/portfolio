@@ -8,7 +8,7 @@ import { Waypoint } from "react-waypoint";
 import whales from "../imgs/interactivePage/skillsPage/whales.png";
 import dolphins from "../imgs/interactivePage/skillsPage/dolphins.png";
 import hammersharks from "../imgs/interactivePage/skillsPage/hammersharks.png";
-
+import summary from "../imgs/interactivePage/skillsPage/summary.png";
 import S from "../imgs/letters/S-white.png";
 import K from "../imgs/letters/K-white.png";
 import i from "../imgs/letters/i-white.png";
@@ -62,9 +62,7 @@ function InterResSkills(): JSX.Element {
           <img className="skills-hammersharks" src={hammersharks} alt="" />
         </div>
       </Waypoint>
-      {/* <Waypoint
-        onEnter={() => setAnimationTriggered(true)}
-      >
+      <Waypoint onEnter={() => setAnimationTriggered(true)}>
         <div
           className={`animated-summary ${
             animationTriggered ? "move-in-summary" : "waiting-state-summary"
@@ -72,7 +70,7 @@ function InterResSkills(): JSX.Element {
         >
           <img className="skills-summary" src={summary} alt="" />
         </div>
-      </Waypoint> */}
+      </Waypoint>
     </div>
   );
 }

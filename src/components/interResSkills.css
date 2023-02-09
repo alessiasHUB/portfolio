@@ -107,3 +107,27 @@
     transform: translateX(0);
   }
 }
+
+.skills-summary {
+  height: 500px;
+}
+.animated-summary {
+  left: -100%;
+  z-index: 2;
+  margin: 100px 0px 0px 60px;
+}
+.waiting-state-summary {
+  position: absolute;
+  left: -1000px;
+}
+.move-in-summary {
+  animation: moveInFromLeft 6s ease-out;
+}
+@keyframes moveInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
