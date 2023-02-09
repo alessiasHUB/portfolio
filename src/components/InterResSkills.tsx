@@ -7,6 +7,7 @@ import { Waypoint } from "react-waypoint";
 // import whale2 from "../imgs/interactivePage/skillsPage/whale-2.png"
 import whales from "../imgs/interactivePage/skillsPage/whales.png";
 import dolphins from "../imgs/interactivePage/skillsPage/dolphins.png";
+import hammersharks from "../imgs/interactivePage/skillsPage/hammersharks.png";
 
 import S from "../imgs/letters/S-white.png";
 import K from "../imgs/letters/K-white.png";
@@ -32,7 +33,6 @@ function InterResSkills(): JSX.Element {
         <img src={S} alt="S" className="skills-title" />
       </div>
       <Waypoint
-        topOffset={"-1000px"}
         onEnter={() => setAnimationTriggered(true)}
       >
         <div
@@ -40,21 +40,11 @@ function InterResSkills(): JSX.Element {
             animationTriggered ? "move-in-right" : "waiting-state-right"
           }`}
         >
-          {/* <img
-            className="skills-whale"
-            src={whale1}
-            alt=""
-          />
-          <img
-            className="skills-whale"
-            src={whale2}
-            alt=""
-          /> */}
           <img className="skills-whale" src={whales} alt="" />
         </div>
       </Waypoint>
       <Waypoint
-        topOffset={"-600px"}
+        topOffset={"-800px"}
         onEnter={() => setAnimationTriggered(true)}
       >
         <div
@@ -65,26 +55,28 @@ function InterResSkills(): JSX.Element {
           <img className="skills-dolphin" src={dolphins} alt="" />
         </div>
       </Waypoint>
-      {/* <div className="about-desc">
-        {skills.map((el, index) => {
-          return (
-            <>
-              <span>{el}</span>
-              {index !== skills.length - 1 && <span>, </span>}
-            </>
-          );
-        })}
-      </div>
-      <div className="about-desc">
-        {softwares.map((el, index) => {
-          return (
-            <>
-              <span>{el}</span>
-              {index !== softwares.length - 1 && <span>, </span>}
-            </>
-          );
-        })}
-      </div> */}
+      <Waypoint
+        onEnter={() => setAnimationTriggered(true)}
+      >
+        <div
+          className={`animated-hammersharks ${
+            animationTriggered ? "move-in-shark" : "waiting-state-shark"
+          }`}
+        >
+          <img className="skills-hammersharks" src={hammersharks} alt="" />
+        </div>
+      </Waypoint>
+      {/* <Waypoint
+        onEnter={() => setAnimationTriggered(true)}
+      >
+        <div
+          className={`animated-summary ${
+            animationTriggered ? "move-in-summary" : "waiting-state-summary"
+          }`}
+        >
+          <img className="skills-summary" src={summary} alt="" />
+        </div>
+      </Waypoint> */}
     </div>
   );
 }

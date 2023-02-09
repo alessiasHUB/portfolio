@@ -38,7 +38,6 @@
 }
 /*-----imgs-----*/
 .skills-whale {
-  z-index: 2;
   height: 950px;
 }
 .animated-whales {
@@ -63,11 +62,11 @@
 }
 
 .skills-dolphin {
-  left: -100%;
-  z-index: 2;
   height: 450px;
 }
 .animated-dolphins {
+  left: -100%;
+  z-index: 2;
   margin-top: 600px;
 }
 .waiting-state-left {
@@ -75,7 +74,7 @@
   left: -1000px;
 }
 .move-in-left {
-  animation: moveInFromLeft 2s ease-out;
+  animation: moveInFromLeft 3s ease-out;
 }
 @keyframes moveInFromLeft {
   0% {
@@ -83,5 +82,28 @@
   }
   100% {
     transform: translateX(0%);
+  }
+}
+
+.skills-hammersharks {
+  /* margin-top: 100px; */
+  z-index: 2;
+  height: 750px;
+  position: absolute;
+  right: 0;
+}
+.waiting-state-shark {
+  position: absolute;
+  right: -1000px;
+}
+.move-in-shark {
+  animation: moveInFromRight 4s ease-out;
+}
+@keyframes moveInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
