@@ -39,7 +39,7 @@
 /*-----imgs-----*/
 .skills-whale {
   z-index: 2;
-  height: 900px;
+  height: 950px;
 }
 .animated-whales {
   position: absolute;
@@ -65,7 +65,7 @@
 .skills-dolphin {
   left: -100%;
   z-index: 2;
-  height: 400px;
+  height: 450px;
 }
 .animated-dolphins {
   margin-top: 600px;
