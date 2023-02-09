@@ -46,6 +46,10 @@
   right: 0;
   z-index: 2;
 }
+.waiting-state-right{
+  position: absolute;
+  right: -1000px
+}
 .move-in-right {
   animation: moveInFromRight 2s ease-out;
 }
@@ -65,6 +69,10 @@
 }
 .animated-dolphins {
   margin-top: 600px;
+}
+.waiting-state-left{
+  position: absolute;
+  left: -1000px
 }
 .move-in-left {
   animation: moveInFromLeft 2s ease-out;

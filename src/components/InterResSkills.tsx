@@ -19,7 +19,7 @@ function InterResSkills(): JSX.Element {
   // todo: change background imgs, less valleys
   // todo: make gifs of the whales swimming
   // todo: right dolphin looks maaank
-
+  // frame- motion, green sock animation library / react-spring
   return (
     <div className="background-img-skills">
       <div className="skills-title-container">
@@ -37,7 +37,7 @@ function InterResSkills(): JSX.Element {
       >
         <div
           className={`animated-whales ${
-            animationTriggered ? "move-in-right" : ""
+            animationTriggered ? "move-in-right" : "waiting-state-right"
           }`}
         >
           {/* <img
@@ -59,7 +59,7 @@ function InterResSkills(): JSX.Element {
       >
         <div
           className={`animated-dolphins ${
-            animationTriggered ? "move-in-left" : ""
+            animationTriggered ? "move-in-left" : "waiting-state-left"
           }`}
         >
           <img className="skills-dolphin" src={dolphins} alt="" />
