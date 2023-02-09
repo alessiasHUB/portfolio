@@ -32,9 +32,7 @@ function InterResSkills(): JSX.Element {
         <img src={L} alt="L" className="skills-title" />
         <img src={S} alt="S" className="skills-title" />
       </div>
-      <Waypoint
-        onEnter={() => setAnimationTriggered(true)}
-      >
+      <Waypoint onEnter={() => setAnimationTriggered(true)}>
         <div
           className={`animated-whales ${
             animationTriggered ? "move-in-right" : "waiting-state-right"
@@ -55,9 +53,7 @@ function InterResSkills(): JSX.Element {
           <img className="skills-dolphin" src={dolphins} alt="" />
         </div>
       </Waypoint>
-      <Waypoint
-        onEnter={() => setAnimationTriggered(true)}
-      >
+      <Waypoint onEnter={() => setAnimationTriggered(true)}>
         <div
           className={`animated-hammersharks ${
             animationTriggered ? "move-in-shark" : "waiting-state-shark"
