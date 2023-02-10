@@ -16,29 +16,30 @@
   justify-content: center; */
   /* align-items: center; */ /* <-- vertical align */
 }
+
 /*-----title-----*/
 .skills-title-container {
-  margin: 0px 70px;
+  margin: 0px 0px 0px 80px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 .skills-title {
-  height: 80px;
+  height: 100px;
   color: white;
   font-size: 30px;
   margin: 5px 1px;
   user-select: none;
   transition: transform 0.2s;
   font-family: "Erica One", cursive;
-  /* font-family: "Modak", cursive; */
 }
 .skills-title:hover {
   transform: scale(1.5);
 }
-/*-----imgs-----*/
+
+/*-----whales-----*/
 .skills-whale {
-  height: 950px;
+  height: 1000px;
 }
 .animated-whales {
   position: absolute;
@@ -61,6 +62,7 @@
   }
 }
 
+/*-----dolphins-----*/
 .skills-dolphin {
   height: 450px;
 }
@@ -85,8 +87,8 @@
   }
 }
 
+/*-----hammerhead sharks-----*/
 .skills-hammersharks {
-  /* margin-top: 100px; */
   z-index: 2;
   height: 750px;
   position: absolute;
@@ -108,8 +110,10 @@
   }
 }
 
+/*-----summary-----*/
 .skills-summary {
   height: 500px;
+  border-radius: 5px;
 }
 .animated-summary {
   left: -100%;

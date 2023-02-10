@@ -19,13 +19,10 @@ function InterResSkills(): JSX.Element {
 
   // todo: change background imgs, less valleys
   // todo: make gifs of the whales swimming
-  // todo: right dolphin looks maaank
-  // frame- motion, green sock animation library / react-spring
   return (
     <div className="background-img-skills">
       <div className="skills-title-container">
         <img src={S} alt="S" className="skills-title" />
-        {/* todo: fix the size of K */}
         <img src={K} alt="K" className="skills-title" />
         <img src={i} alt="i" className="skills-title" />
         <img src={L} alt="L" className="skills-title" />
