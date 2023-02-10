@@ -30,7 +30,6 @@ import O from "../imgs/letters/O-white.png";
 import Y from "../imgs/letters/Y-white.png";
 import F from "../imgs/letters/F-white.png";
 
-
 //--------------------------------------------------------section page imports
 import InterResSkills from "./InterResSkills";
 

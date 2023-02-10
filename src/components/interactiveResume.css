@@ -52,22 +52,21 @@
   color: white;
   width: 100%;
 }
-.title-1-container{
+.title-1-container {
   display: flex;
   margin: 0px 0px 0px 0px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-.title-2-container{
-  display:flex;
+.title-2-container {
+  display: flex;
   margin: 10px 20px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-
 }
-.inter-title{
+.inter-title {
   height: 40px;
   transition: transform 0.3s;
 }
