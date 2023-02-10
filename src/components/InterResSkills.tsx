@@ -3,8 +3,6 @@ import "./interResSkills.css";
 import { Waypoint } from "react-waypoint";
 
 //----------------------------------------------image imports
-// import whale1 from "../imgs/interactivePage/skillsPage/whale-1.png"
-// import whale2 from "../imgs/interactivePage/skillsPage/whale-2.png"
 import whales from "../imgs/interactivePage/skillsPage/whales.png";
 import dolphins from "../imgs/interactivePage/skillsPage/dolphins.png";
 import hammersharks from "../imgs/interactivePage/skillsPage/hammersharks.png";
@@ -17,7 +15,7 @@ import L from "../imgs/letters/L-white.png";
 function InterResSkills(): JSX.Element {
   const [animationTriggered, setAnimationTriggered] = React.useState(false);
 
-  // todo: change background imgs, less valleys
+  // todo: change background imgs, I don't like it
   // todo: make gifs of the whales swimming
   return (
     <div className="background-img-skills">
