@@ -16,6 +16,7 @@ import useInterval from "./useInterval";
 
 //--------------------------------------------------------section page imports
 import InterResSkills from "./InterResSkills";
+import InterResHobbies from "./InterResHobbies";
 
 // todo? link to one page links, scroll
 // https://medium.com/geekculture/scrollable-single-page-site-navigation-with-react-custom-hooks-4e7af716f6b1
@@ -90,8 +91,9 @@ export default function InteractiveResume(): JSX.Element {
       <div className="inter-res-skills">
         <InterResSkills />
       </div>
-      <div className="inter-res-hobbies"></div>
-      <div className="inter-res-projects"></div>
+      <div className="inter-res-hobbies">
+        <InterResHobbies />
+      </div>
       <div className="inter-res-education"></div>
       <div className="inter-res-experience"></div>
       <div className="inter-res-contact"></div>

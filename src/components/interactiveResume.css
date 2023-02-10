@@ -140,7 +140,6 @@
   overflow: hidden;
   position: relative;
 }
-
 .center-img {
   user-select: none;
   -webkit-user-drag: none;
@@ -151,4 +150,9 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+/*-----hobbies page-----*/
+.inter-res-hobbies{
+  margin-top: 3000px;
 }
