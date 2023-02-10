@@ -45,18 +45,37 @@
 }
 
 /*-----intro-----*/
-.interact-title-1 {
+.inter-title-container {
+  margin: 40px 0 0 0;
   z-index: 1;
   position: absolute;
   color: white;
-  font-size: 22px;
+  width: 100%;
 }
-.interact-title-2 {
-  z-index: 1;
-  position: absolute;
-  color: white;
-  font-size: 22px;
-  margin-top: 44px;
+.title-1-container{
+  display: flex;
+  margin: 0px 0px 0px 0px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.title-2-container{
+  display:flex;
+  margin: 10px 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+.inter-title{
+  height: 40px;
+  transition: transform 0.3s;
+}
+.inter-title:hover {
+  transform: scale(1.8);
+}
+.empty {
+  padding: 0px 6px;
 }
 
 /*-----player-----*/
@@ -65,7 +84,7 @@
   -webkit-user-drag: none;
   z-index: 2;
   position: fixed;
-  top: calc(50% - 90px);
+  top: calc(50% - 140px);
   left: calc(50% - 170px);
   /* transform: translate(-50%, -50%); */
   width: 100px;
@@ -76,7 +95,7 @@
   -webkit-user-drag: none;
   z-index: 1;
   position: absolute;
-  top: calc(50% + 110px);
+  top: calc(50% + 60px);
   left: calc(50% - 240px);
   /* transform: translate(-50%, -50%); */
   height: 180px;
@@ -124,11 +143,11 @@
 /*  http://howbigismybrowser.com/  */
 @media screen and (min-width: 1500px) {
   .player {
-    top: calc(50% - 133px);
+    top: calc(50% - 143px);
     left: calc(50% - 170px);
   }
   .boat {
-    top: calc(50% + 70px);
+    top: calc(50% + 60px);
     left: calc(50% - 240px);
   }
 }

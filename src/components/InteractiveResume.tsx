@@ -13,6 +13,23 @@ import underWater1 from "../imgs/interactivePage/player/playerUnder1.png";
 import swim1 from "../imgs/interactivePage/player/playerDefaultSwim.png";
 import swimGif from "../imgs/interactivePage/player/playerSwimResizeGifWithFade.gif";
 import useInterval from "./useInterval";
+import S from "../imgs/letters/S-white.png";
+import A from "../imgs/letters/A-white.png";
+import i from "../imgs/letters/i-white.png";
+import N from "../imgs/letters/N-white.png";
+import T from "../imgs/letters/T-white.png";
+import E from "../imgs/letters/E-white.png";
+import R from "../imgs/letters/R-white.png";
+import C from "../imgs/letters/C-white.png";
+import V from "../imgs/letters/V-white.png";
+import M from "../imgs/letters/M-white.png";
+import U from "../imgs/letters/U-white.png";
+import L from "../imgs/letters/L-white.png";
+import B from "../imgs/letters/B-white.png";
+import O from "../imgs/letters/O-white.png";
+import Y from "../imgs/letters/Y-white.png";
+import F from "../imgs/letters/F-white.png";
+
 
 //--------------------------------------------------------section page imports
 import InterResSkills from "./InterResSkills";
@@ -73,10 +90,46 @@ export default function InteractiveResume(): JSX.Element {
       <img className="boat" src={boat} alt="" />
       <div className="start-container">
         <div className="center-img"></div>
-        <p className="interact-title-1">interactive resume of</p>{" "}
-        {/* todo: change to image */}
-        <p className="interact-title-2">Alessia Borys</p>{" "}
-        {/* todo: change to images */}
+        <div className="inter-title-container">
+          <div className="title-1-container">
+            <img src={i} alt="i" className="inter-title" />
+            <img src={N} alt="N" className="inter-title" />
+            <img src={T} alt="T" className="inter-title" />
+            <img src={E} alt="E" className="inter-title" />
+            <img src={R} alt="R" className="inter-title" />
+            <img src={A} alt="A" className="inter-title" />
+            <img src={C} alt="C" className="inter-title" />
+            <img src={T} alt="T" className="inter-title" />
+            <img src={i} alt="i" className="inter-title" />
+            <img src={V} alt="V" className="inter-title" />
+            <img src={E} alt="E" className="inter-title" />
+            <p className="empty"> </p>
+            <img src={R} alt="R" className="inter-title" />
+            <img src={E} alt="E" className="inter-title" />
+            <img src={S} alt="S" className="inter-title" />
+            <img src={U} alt="U" className="inter-title" />
+            <img src={M} alt="M" className="inter-title" />
+            <img src={E} alt="E" className="inter-title" />
+            <p className="empty"> </p>
+            <img src={O} alt="O" className="inter-title" />
+            <img src={F} alt="F" className="inter-title" />
+          </div>
+          <div className="title-2-container">
+            <img src={A} alt="A" className="inter-title" />
+            <img src={L} alt="L" className="inter-title" />
+            <img src={E} alt="E" className="inter-title" />
+            <img src={S} alt="S" className="inter-title" />
+            <img src={S} alt="S" className="inter-title" />
+            <img src={i} alt="I" className="inter-title" />
+            <img src={A} alt="A" className="inter-title" />
+            <p className="empty"> </p>
+            <img src={B} alt="B" className="inter-title" />
+            <img src={O} alt="O" className="inter-title" />
+            <img src={R} alt="R" className="inter-title" />
+            <img src={Y} alt="Y" className="inter-title" />
+            <img src={S} alt="S" className="inter-title" />
+          </div>
+        </div>
         {!gameStart && (
           <p className="instruction-txt">
             Press keyboard's down-arrow or scroll mouse
