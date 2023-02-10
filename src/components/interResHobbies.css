@@ -1,20 +1,19 @@
-
 /*-----title-----*/
 .hobbies-title-container {
-    margin: 0px 0px 0px 80px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .hobbies-title {
-    height: 200px;
-    color: white;
-    font-size: 30px;
-    margin: 5px 1px;
-    user-select: none;
-    transition: transform 0.2s;
-    font-family: "Erica One", cursive;
-  }
-  .hobbies-title:hover {
-    transform: scale(1.5);
-  }
+  margin: 0px 0px 0px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.hobbies-title {
+  height: 200px;
+  color: white;
+  font-size: 30px;
+  margin: 5px 1px;
+  user-select: none;
+  transition: transform 0.2s;
+  font-family: "Erica One", cursive;
+}
+.hobbies-title:hover {
+  transform: scale(1.5);
+}
