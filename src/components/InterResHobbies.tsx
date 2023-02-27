@@ -5,12 +5,12 @@ import B from "../imgs/letters/B-white.png";
 import i from "../imgs/letters/i-white.png";
 import E from "../imgs/letters/E-white.png";
 import S from "../imgs/letters/S-white.png";
+import octopus from "../imgs/interactivePage/hobbiesPage/octopus.gif"
 
 /*
-"Bouldering",
-"Dancing salsa & bachata",
-"Painting",
-"Playing piano",
+Dancing salsa & bachata
+Painting
+Playing piano
 */
 
 export default function InterResHobbies(): JSX.Element {
@@ -25,6 +25,7 @@ export default function InterResHobbies(): JSX.Element {
         <img src={E} alt="E" className="hobbies-title" />
         <img src={S} alt="S" className="hobbies-title" />
       </div>
+      <img src={octopus} className="octopus-gif" alt="octopus" />
     </div>
   );
 }
